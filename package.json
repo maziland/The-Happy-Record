@@ -1,0 +1,22 @@
+{
+  "name": "albumshop",
+  "version": "1.0.0",
+  "description": "The best shop to buy your albums from!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maziland/albumshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maziland/albumshop/issues"
+  },
+  "homepage": "https://github.com/maziland/albumshop#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
