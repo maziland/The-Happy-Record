@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maziland/albumshop.git"
+    "url": "git+https://github.com/maziland/Album-Shop.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maziland/albumshop/issues"
+    "url": "https://github.com/maziland/Album-Shop/issues"
   },
-  "homepage": "https://github.com/maziland/albumshop#readme",
+  "homepage": "https://github.com/maziland/Album-Shop#readme",
   "dependencies": {
     "express": "^4.18.2"
   }
