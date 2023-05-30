@@ -1,8 +1,12 @@
 const express = require("express")
 const app = express()
+const path = require("path")
+
+app.use(express.static('public'))
 
 app.get("/",(req,res)=>{
-    res.send("Welcome to the best album shop!!!");
+    res.sendFile(path.join(__dirname,'public/index.html'));
 });
 
 app.listen(3000)
+console.log('Running at Port 3000');
