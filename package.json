@@ -1,5 +1,5 @@
 {
-  "name": "albumshop",
+  "name": "thehappyrecord",
   "version": "1.0.0",
   "description": "The best shop to buy your albums from!",
   "main": "app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maziland/Album-Shop.git"
+    "url": "git+https://github.com/maziland/The-Happy-Record.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maziland/Album-Shop/issues"
+    "url": "https://github.com/maziland/The-Happy-Record/issues"
   },
-  "homepage": "https://github.com/maziland/Album-Shop#readme",
+  "homepage": "https://github.com/maziland/The-Happy-Record#readme",
   "dependencies": {
     "express": "^4.18.2"
   }
