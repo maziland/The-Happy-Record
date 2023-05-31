@@ -1,6 +1,7 @@
 const axios = require('axios').default;
 const JSSoup = require('jssoup').default;
 const he = require('he');
+const fs = require("fs");
 
 var albums = []
 
@@ -42,11 +43,12 @@ async function getAlbumsFromAllPages() {
     while (index <= 8) {
         url = baseUrl + index + ".html";
         console.log(`Scraping index ${index}`);
-        console.log(url);
         await getAlbumsFromPage(url);
         index++;
     }
-    console.log(albums);
+    fs.writeFile("data/top_albums.json", JSON.stringify(albums), (err) => {
+        if (err) throw (err);
+    });
     console.log("finished");
 };
 

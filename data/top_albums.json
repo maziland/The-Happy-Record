@@ -1,0 +1,1395 @@
+[
+    {
+        "number": "200",
+        "coverImage": "//e.snmc.io/i/150/s/885ef63acd9cfd8221afc7d7541a2bf7/4639982",
+        "singerName": "Justin Timberlake",
+        "albumName": "The 20/20 Experience",
+        "releaseYear": "2013"
+    },
+    {
+        "number": "199",
+        "coverImage": "//e.snmc.io/i/150/s/8619b7bc8a42afa1c52e636943ae2523/7688739",
+        "singerName": "Christina Aguilera",
+        "albumName": "Christina Aguilera",
+        "releaseYear": "1999"
+    },
+    {
+        "number": "198",
+        "coverImage": "//e.snmc.io/i/150/s/d650644a20384915c15e27452c506d0d/7426821",
+        "singerName": "Led Zeppelin",
+        "albumName": "In Through the Out Door",
+        "releaseYear": "1979"
+    },
+    {
+        "number": "197",
+        "coverImage": "//e.snmc.io/i/150/s/8871a75ffaae69727fc955e93f0be79d/7081858",
+        "singerName": "Matchbox 20",
+        "albumName": "Yourself or Someone Like You",
+        "releaseYear": "1996"
+    },
+    {
+        "number": "196",
+        "coverImage": "//e.snmc.io/i/150/s/f77c6e9f756e735bbc08916df1d7e552/2364946",
+        "singerName": "Various Artists",
+        "albumName": "William Shakespeare's Romeo + Juliet",
+        "releaseYear": "1996"
+    },
+    {
+        "number": "195",
+        "coverImage": "//e.snmc.io/i/150/s/3a10b8163ee4f6ce077e47f9294eca1a/2283617",
+        "singerName": "Creedence Clearwater Revival",
+        "albumName": "Cosmo's Factory",
+        "releaseYear": "1970"
+    },
+    {
+        "number": "194",
+        "coverImage": "//e.snmc.io/i/150/s/926432bdef432107c25ee3effc0300d5/5707164",
+        "singerName": "Led Zeppelin",
+        "albumName": "Led Zeppelin [IV]",
+        "releaseYear": "1971"
+    },
+    {
+        "number": "193",
+        "coverImage": "//e.snmc.io/i/150/s/8fe95ccf06bd5d09bcff1fb259019e41/4192309",
+        "singerName": "John Denver",
+        "albumName": "Back Home Again",
+        "releaseYear": "1974"
+    },
+    {
+        "number": "192",
+        "coverImage": "//e.snmc.io/i/150/s/6d439a25b1cecff16e5c7412e8791fa4/1229966",
+        "singerName": "John Cougar Mellencamp",
+        "albumName": "Scarecrow",
+        "releaseYear": "1985"
+    },
+    {
+        "number": "191",
+        "coverImage": "//e.snmc.io/i/150/s/6c629af554d2d51500fea5bbd834e671/1888207",
+        "singerName": "Billy Joel",
+        "albumName": "52nd Street",
+        "releaseYear": "1978"
+    },
+    {
+        "number": "190",
+        "coverImage": "//e.snmc.io/i/150/s/a45422134b0730078d027e705eb38cb4/6469475",
+        "singerName": "Roberta Flack",
+        "albumName": "First Take",
+        "releaseYear": "1969"
+    },
+    {
+        "number": "189",
+        "coverImage": "//e.snmc.io/i/150/s/0d03191dced92cea38d5d2016ec847c8/4915275",
+        "singerName": "Lorde",
+        "albumName": "Pure Heroine",
+        "releaseYear": "2013"
+    },
+    {
+        "number": "188",
+        "coverImage": "//e.snmc.io/i/150/s/1339d807af730616720e016ea2b0aaf3/1285049",
+        "singerName": "Simon and Garfunkel",
+        "albumName": "Bridge Over Troubled Water",
+        "releaseYear": "1970"
+    },
+    {
+        "number": "187",
+        "coverImage": "//e.snmc.io/i/150/s/399e86ed06cda80077c2c287ea4f40c0/1560358",
+        "singerName": "The Beatles",
+        "albumName": "Meet The Beatles!",
+        "releaseYear": "1964"
+    },
+    {
+        "number": "186",
+        "coverImage": "//e.snmc.io/i/150/s/e064ac3b442a453fea8d35e67b2b86bc/3918645",
+        "singerName": "One Direction",
+        "albumName": "Up All Night",
+        "releaseYear": "2011"
+    },
+    {
+        "number": "185",
+        "singerName": "Led Zeppelin",
+        "albumName": "Houses of the Holy",
+        "releaseYear": "1973"
+    },
+    {
+        "number": "184",
+        "coverImage": "//e.snmc.io/i/150/s/ca0fae522b324c3f6a2c9525d369aa52/1595513",
+        "singerName": "Stevie Nicks",
+        "albumName": "Bella donna",
+        "releaseYear": "1981"
+    },
+    {
+        "number": "183",
+        "coverImage": "//e.snmc.io/i/150/s/3d6475189e18dfa0561497920fc9cc6a/2130645",
+        "singerName": "Tina Turner",
+        "albumName": "Private Dancer",
+        "releaseYear": "1984"
+    },
+    {
+        "number": "182",
+        "coverImage": "//e.snmc.io/i/150/s/496edf5fa33b89ae50510d6f69f6c6da/2443434",
+        "singerName": "Nickelback",
+        "albumName": "Dark Horse",
+        "releaseYear": "2008"
+    },
+    {
+        "number": "181",
+        "coverImage": "//e.snmc.io/i/150/s/1a03ba76af4302d7c623f021adb6967f/1693901",
+        "singerName": "Creed",
+        "albumName": "Weathered",
+        "releaseYear": "2001"
+    },
+    {
+        "number": "180",
+        "coverImage": "//e.snmc.io/i/150/s/23fc5af068637c795126677c52103399/2758916",
+        "singerName": "Tears for Fears",
+        "albumName": "Songs From the Big Chair",
+        "releaseYear": "1985"
+    },
+    {
+        "number": "179",
+        "coverImage": "//e.snmc.io/i/150/s/71829549fb7cdb89360796caf51354d1/2726983",
+        "singerName": "Madonna",
+        "albumName": "True Blue",
+        "releaseYear": "1986"
+    },
+    {
+        "number": "178",
+        "coverImage": "//e.snmc.io/i/150/s/c58443ab06cc9e3ab3e7b4b86d7a91a1/2474743",
+        "singerName": "Peter, Paul and Mary",
+        "albumName": "In the Wind",
+        "releaseYear": "1963"
+    },
+    {
+        "number": "177",
+        "coverImage": "//e.snmc.io/i/150/s/f364d2e96a536bed47bafc38e1a9e9c6/8392036",
+        "singerName": "Neil Young",
+        "albumName": "Harvest",
+        "releaseYear": "1972"
+    },
+    {
+        "number": "176",
+        "coverImage": "//e.snmc.io/i/150/s/44e41b26a03bdaeb56688dda8e5d2efa/8810005",
+        "singerName": "Jim Croce",
+        "albumName": "You Don't Mess Around With Jim",
+        "releaseYear": "1972"
+    },
+    {
+        "number": "175",
+        "coverImage": "//e.snmc.io/i/150/s/bc561b8e70829760fa7c91be14375072/5128253",
+        "singerName": "Elton John",
+        "albumName": "Captain Fantastic and the Brown Dirt Cowboy",
+        "releaseYear": "1975"
+    },
+    {
+        "number": "174",
+        "coverImage": "//e.snmc.io/i/150/s/5ac1219f414775df6e4d87844eea3839/1667995",
+        "singerName": "Nelly",
+        "albumName": "Nellyville",
+        "releaseYear": "2002"
+    },
+    {
+        "number": "173",
+        "coverImage": "//e.snmc.io/i/150/s/a07acf53fc95daa3fdca42c414edcf3b/1421939",
+        "singerName": "Cream",
+        "albumName": "Disraeli Gears",
+        "releaseYear": "1967"
+    },
+    {
+        "number": "172",
+        "coverImage": "//e.snmc.io/i/150/s/64b4e5def790e3171dd3a22815151257/10792184",
+        "singerName": "Green Day",
+        "albumName": "Dookie",
+        "releaseYear": "1994"
+    },
+    {
+        "number": "171",
+        "coverImage": "//e.snmc.io/i/150/s/c032537721b0f82369ef41961dee4617/1472593",
+        "singerName": "Diana Ross and The Supremes",
+        "albumName": "Greatest Hits",
+        "releaseYear": "1967 [Compilation]"
+    },
+    {
+        "number": "170",
+        "coverImage": "//e.snmc.io/i/150/s/7bd842e389d32a7b088f6df9ecf307fa/1842685",
+        "singerName": "Herb Alpert & The Tijuana Brass",
+        "albumName": "What Now My Love",
+        "releaseYear": "1966"
+    },
+    {
+        "number": "169",
+        "coverImage": "//e.snmc.io/i/150/s/3b12892b53c0c7783a839c8cb8308727/1842518",
+        "singerName": "Bryan Adams",
+        "albumName": "Reckless",
+        "releaseYear": "1984"
+    },
+    {
+        "number": "168",
+        "coverImage": "//e.snmc.io/i/150/s/b7a3bf821131ab4f0cda761a20323191/1760025",
+        "singerName": "Billy Joel",
+        "albumName": "Glass Houses",
+        "releaseYear": "1980"
+    },
+    {
+        "number": "167",
+        "coverImage": "//e.snmc.io/i/150/s/db93195c666d8685b1717eeb9818ec3d/4144033",
+        "singerName": "Counting Crows",
+        "albumName": "August and Everything After",
+        "releaseYear": "1993"
+    },
+    {
+        "number": "166",
+        "coverImage": "//e.snmc.io/i/150/s/bf2c666de15fa21bc53768db780623e2/5177895",
+        "singerName": "Barbra Streisand",
+        "albumName": "Funny Girl",
+        "releaseYear": "1968"
+    },
+    {
+        "number": "165",
+        "coverImage": "//e.snmc.io/i/150/s/76b3a087dacca85f2c25e9a833505587/4117934",
+        "singerName": "Chicago",
+        "albumName": "Chicago V",
+        "releaseYear": "1972"
+    },
+    {
+        "number": "164",
+        "coverImage": "//e.snmc.io/i/150/s/c6c19a8819e6a0e4a341d28ef649b968/1776289",
+        "singerName": "Céline Dion",
+        "albumName": "Let's Talk About Love",
+        "releaseYear": "1997"
+    },
+    {
+        "number": "163",
+        "coverImage": "//e.snmc.io/i/150/s/eb3684a17eea669fa90c9cfd63ee92a7/2296464",
+        "singerName": "James Horner",
+        "albumName": "Titanic",
+        "releaseYear": "1997"
+    },
+    {
+        "number": "162",
+        "coverImage": "//e.snmc.io/i/150/s/4b7d2f8100342cbb0dac69254498e62d/1243287",
+        "singerName": "Nickelback",
+        "albumName": "Silver Side Up",
+        "releaseYear": "2001"
+    },
+    {
+        "number": "161",
+        "coverImage": "//e.snmc.io/i/150/s/a3af5f4b30288fbb591ed9d122061521/1444594",
+        "singerName": "Earth, Wind & Fire",
+        "albumName": "That's the Way of the World",
+        "releaseYear": "1975"
+    },
+    {
+        "number": "160",
+        "coverImage": "//e.snmc.io/i/150/s/f4b7afc693ee7a727c7e661ffaf0f0d2/1889898",
+        "singerName": "Various Artists",
+        "albumName": "Woodstock",
+        "releaseYear": "1970"
+    },
+    {
+        "number": "159",
+        "coverImage": "//e.snmc.io/i/150/s/70d1f244f026f94c80f82631a9959bfd/1799094",
+        "singerName": "Whitney Houston",
+        "albumName": "Whitney",
+        "releaseYear": "1987"
+    },
+    {
+        "number": "158",
+        "coverImage": "//e.snmc.io/i/150/s/a58c356f1ccd59f28741d6566fbb7978/1269425",
+        "singerName": "Kris Kross",
+        "albumName": "Totally Krossed Out",
+        "releaseYear": "1992"
+    },
+    {
+        "number": "157",
+        "coverImage": "//e.snmc.io/i/150/s/121a1a88fa1ebac2bdde8ec7c199dd24/1517820",
+        "singerName": "P!nk",
+        "albumName": "M!ssundaztood",
+        "releaseYear": "2001"
+    },
+    {
+        "number": "156",
+        "coverImage": "//e.snmc.io/i/150/s/201a0e30b01d9336e0e2ec4086cf7542/5831891",
+        "singerName": "The Monkees",
+        "albumName": "More of The Monkees",
+        "releaseYear": "1967"
+    },
+    {
+        "number": "155",
+        "coverImage": "//e.snmc.io/i/150/s/ba346603de215784a12593381f4ab6b9/1882154",
+        "singerName": "Eagles",
+        "albumName": "One of These Nights",
+        "releaseYear": "1975"
+    },
+    {
+        "number": "154",
+        "coverImage": "//e.snmc.io/i/150/s/8db5eed260ff4e1df1a2a865fc2c86e5/1958367",
+        "singerName": "Natalie Cole",
+        "albumName": "Unforgettable",
+        "releaseYear": "1991"
+    },
+    {
+        "number": "153",
+        "coverImage": "//e.snmc.io/i/150/s/85ee90447cfeeff1ed5e4cf9a8f118b3/8191307",
+        "singerName": "Enya",
+        "albumName": "A Day Without Rain",
+        "releaseYear": "2000"
+    },
+    {
+        "number": "152",
+        "coverImage": "//e.snmc.io/i/150/s/c3c63419f92a8889eee94b8b062507a8/10003422",
+        "singerName": "Lil Wayne",
+        "albumName": "Tha Carter III",
+        "releaseYear": "2008"
+    },
+    {
+        "number": "151",
+        "coverImage": "//e.snmc.io/i/150/s/f48750bae58eb45f75d0404a06b3f5f8/1838193",
+        "singerName": "John Cougar",
+        "albumName": "American Fool",
+        "releaseYear": "1982"
+    },
+    {
+        "number": "150",
+        "coverImage": "//e.snmc.io/i/150/s/43e2c832fa4aee7905661bb75e357a27/2651020",
+        "singerName": "Amy Winehouse",
+        "albumName": "Back to Black",
+        "releaseYear": "2007"
+    },
+    {
+        "number": "149",
+        "coverImage": "//e.snmc.io/i/150/s/47de2e8bf36e4f7013027a2ae38a042b/2624666",
+        "singerName": "Michael Jackson",
+        "albumName": "Off the Wall",
+        "releaseYear": "1979"
+    },
+    {
+        "number": "148",
+        "coverImage": "//e.snmc.io/i/150/s/201f8d640ce926425bf514fe56314eaa/1838497",
+        "singerName": "Eagles",
+        "albumName": "The Long Run",
+        "releaseYear": "1979"
+    },
+    {
+        "number": "147",
+        "coverImage": "//e.snmc.io/i/150/s/4f5758fefad0b5af5ac05016030cde49/1737880",
+        "singerName": "Akon",
+        "albumName": "Konvicted",
+        "releaseYear": "2006"
+    },
+    {
+        "number": "146",
+        "coverImage": "//e.snmc.io/i/150/s/002775041ecac7094f000e257eb9771b/10431623",
+        "singerName": "Led Zeppelin",
+        "albumName": "Led Zeppelin II",
+        "releaseYear": "1969"
+    },
+    {
+        "number": "145",
+        "coverImage": "//e.snmc.io/i/150/s/02d8351814a4d99fe6afcb13c62f7681/1824878",
+        "singerName": "Elton John",
+        "albumName": "Honky Château",
+        "releaseYear": "1972"
+    },
+    {
+        "number": "144",
+        "coverImage": "//e.snmc.io/i/150/s/f4a8dafb6b1a2d88e4422dcee510eea0/2200412",
+        "singerName": "Don McLean",
+        "albumName": "American Pie",
+        "releaseYear": "1971"
+    },
+    {
+        "number": "143",
+        "coverImage": "//e.snmc.io/i/150/s/02d16d001be0bd3ad551d422f1894613/1808992",
+        "singerName": "Jefferson Starship",
+        "albumName": "Red Octopus",
+        "releaseYear": "1975"
+    },
+    {
+        "number": "142",
+        "coverImage": "//e.snmc.io/i/150/s/b6af19f41ec6669c6d4cae2afd07e054/1212008",
+        "singerName": "Various Artists",
+        "albumName": "Grease",
+        "releaseYear": "1978"
+    },
+    {
+        "number": "141",
+        "coverImage": "//e.snmc.io/i/150/s/c4cd50b9d105a17ccf5a66767de94620/2581764",
+        "singerName": "Dixie Chicks",
+        "albumName": "Home",
+        "releaseYear": "2002"
+    },
+    {
+        "number": "140",
+        "coverImage": "//e.snmc.io/i/150/s/955da687cfb2f9c2be7dcf40b18d73af/6752931",
+        "singerName": "Taylor Swift",
+        "albumName": "Red",
+        "releaseYear": "2012"
+    },
+    {
+        "number": "139",
+        "coverImage": "//e.snmc.io/i/150/s/4e4321694d10884f66b3e80d81d5c0b3/1723629",
+        "singerName": "50 Cent",
+        "albumName": "Get Rich or Die Tryin'",
+        "releaseYear": "2003"
+    },
+    {
+        "number": "138",
+        "coverImage": "//e.snmc.io/i/150/s/80ea209469025b508372f5f6927e9d25/1444713",
+        "singerName": "Michael Jackson",
+        "albumName": "Bad",
+        "releaseYear": "1987"
+    },
+    {
+        "number": "137",
+        "coverImage": "//e.snmc.io/i/150/s/f7c54833aa4f9be0806e5a750c10a5b7/1226701",
+        "singerName": "*NSYNC",
+        "albumName": "*NSYNC",
+        "releaseYear": "1998"
+    },
+    {
+        "number": "136",
+        "coverImage": "//e.snmc.io/i/150/s/8b06c461bb01742997f3f83381aa2897/4481472",
+        "singerName": "Jason Aldean",
+        "albumName": "My Kinda Party",
+        "releaseYear": "2010"
+    },
+    {
+        "number": "135",
+        "coverImage": "//e.snmc.io/i/150/s/0e3310582d86f32e598161446d231f7e/6617288",
+        "singerName": "The Beatles",
+        "albumName": "Abbey Road",
+        "releaseYear": "1969"
+    },
+    {
+        "number": "134",
+        "singerName": "The Black Eyed Peas",
+        "albumName": "Monkey Business",
+        "releaseYear": "2005"
+    },
+    {
+        "number": "133",
+        "coverImage": "//e.snmc.io/i/150/s/47f705baeb7d74015cb0d3b4d06d4a9d/1216646",
+        "singerName": "Whitesnake",
+        "albumName": "Whitesnake",
+        "releaseYear": "1987"
+    },
+    {
+        "number": "132",
+        "coverImage": "//e.snmc.io/i/150/s/8f5c1e532268916550bfdf6cec3a6385/1839313",
+        "singerName": "The Monkees",
+        "albumName": "The Monkees",
+        "releaseYear": "1966"
+    },
+    {
+        "number": "131",
+        "coverImage": "//e.snmc.io/i/150/s/3f4cdac9893358ebb93ef4359d2b8f24/10910535",
+        "singerName": "The Beatles",
+        "albumName": "1",
+        "releaseYear": "2000 [Compilation]"
+    },
+    {
+        "number": "130",
+        "coverImage": "//e.snmc.io/i/150/s/5b2e0a560bf02561060715f1885e951f/4911331",
+        "singerName": "Phil Collins",
+        "albumName": "No Jacket Required",
+        "releaseYear": "1985"
+    },
+    {
+        "number": "129",
+        "coverImage": "//e.snmc.io/i/150/s/82a35e536c1d6c86f5d721f929e9fa84/2481024",
+        "singerName": "Boyz II Men",
+        "albumName": "Cooleyhighharmony",
+        "releaseYear": "1991"
+    },
+    {
+        "number": "128",
+        "coverImage": "//e.snmc.io/i/150/s/75b0d092a795059e16cc0be28d0ad6aa/2089493",
+        "singerName": "Alicia Keys",
+        "albumName": "As I Am",
+        "releaseYear": "2007"
+    },
+    {
+        "number": "127",
+        "coverImage": "//e.snmc.io/i/150/s/fac934ada35acbc79bb1980f22dfa4dd/7628416",
+        "singerName": "U2",
+        "albumName": "The Joshua Tree",
+        "releaseYear": "1987"
+    },
+    {
+        "number": "126",
+        "coverImage": "//e.snmc.io/i/150/s/c3a122a96a23b9b055496d7e370dc77e/5928301",
+        "singerName": "TLC",
+        "albumName": "CrazySexyCool",
+        "releaseYear": "1994"
+    },
+    {
+        "number": "125",
+        "coverImage": "//e.snmc.io/i/150/s/d366f217286c687d495eb83a2e06b111/6410841",
+        "singerName": "Jewel",
+        "albumName": "Pieces of You",
+        "releaseYear": "1995"
+    },
+    {
+        "number": "124",
+        "coverImage": "//e.snmc.io/i/150/s/565fd71a783a94c8d516b40cdd45d741/6576413",
+        "singerName": "The Police",
+        "albumName": "Synchronicity",
+        "releaseYear": "1983"
+    },
+    {
+        "number": "123",
+        "coverImage": "//e.snmc.io/i/150/s/9409bf1eb04595c9ed4d81c959e5e7f2/1795040",
+        "singerName": "Various Artists",
+        "albumName": "Hair [Original Broadway Cast]",
+        "releaseYear": "1968"
+    },
+    {
+        "number": "122",
+        "coverImage": "//e.snmc.io/i/150/s/760e965618ed801749a3ccd02989f1fc/10185384",
+        "singerName": "Huey Lewis and The News",
+        "albumName": "Sports",
+        "releaseYear": "1983"
+    },
+    {
+        "number": "121",
+        "coverImage": "//e.snmc.io/i/150/s/2b2100ffe369846875f8c1a6d8791e40/2054257",
+        "singerName": "The Jimi Hendrix Experience",
+        "albumName": "Are You Experienced?",
+        "releaseYear": "1967"
+    },
+    {
+        "number": "120",
+        "coverImage": "//e.snmc.io/i/150/s/b642880dca9ad546f6698cd1cad8f42b/2401915",
+        "singerName": "Paul McCartney & Wings",
+        "albumName": "Band on the Run",
+        "releaseYear": "1973"
+    },
+    {
+        "number": "119",
+        "coverImage": "//e.snmc.io/i/150/s/969473d8ae1a60d499c7e62dbfcc1453/5915682",
+        "singerName": "Janet Jackson",
+        "albumName": "Janet.",
+        "releaseYear": "1993"
+    },
+    {
+        "number": "118",
+        "singerName": "Nirvana",
+        "albumName": "Nevermind",
+        "releaseYear": "1991"
+    },
+    {
+        "number": "117",
+        "coverImage": "//e.snmc.io/i/150/s/8fb2277c07633322b6a9a19857aa1c06/1226646",
+        "singerName": "Kenny G",
+        "albumName": "Breathless",
+        "releaseYear": "1992"
+    },
+    {
+        "number": "116",
+        "coverImage": "//e.snmc.io/i/150/s/55877ed4f91951dd51f609fa0298b264/4289952",
+        "singerName": "Mumford & Sons",
+        "albumName": "Babel",
+        "releaseYear": "2012"
+    },
+    {
+        "number": "115",
+        "coverImage": "//e.snmc.io/i/150/s/5b5e99650dc53a44be5cd672e65eb2f3/7228470",
+        "singerName": "Stevie Wonder",
+        "albumName": "Songs in the Key of Life",
+        "releaseYear": "1976"
+    },
+    {
+        "number": "114",
+        "singerName": "Santana",
+        "albumName": "Abraxas",
+        "releaseYear": "1970"
+    },
+    {
+        "number": "113",
+        "coverImage": "//e.snmc.io/i/150/s/ab5ff56cd52348a8c918c96f259cce09/5196436",
+        "singerName": "Ed Sheeran",
+        "albumName": "x [Multiply]",
+        "releaseYear": "2014"
+    },
+    {
+        "number": "112",
+        "coverImage": "//e.snmc.io/i/150/s/977149f2efa04a9cf29967aa006a43ba/10006377",
+        "singerName": "OutKast",
+        "albumName": "Speakerboxxx / The Love Below",
+        "releaseYear": "2003"
+    },
+    {
+        "number": "111",
+        "coverImage": "//e.snmc.io/i/150/s/4f5799486f3be8059e539123b2755199/8245516",
+        "singerName": "*NSYNC",
+        "albumName": "No Strings Attached",
+        "releaseYear": "2000"
+    },
+    {
+        "number": "110",
+        "coverImage": "//e.snmc.io/i/150/s/6853e36473ba1d80346cdeb6d1fc7997/8692026",
+        "singerName": "Prince and The Revolution",
+        "albumName": "Purple Rain",
+        "releaseYear": "1984"
+    },
+    {
+        "number": "109",
+        "coverImage": "//e.snmc.io/i/150/s/2b9dad5d1c90bfa41ab103ace24121dd/4859536",
+        "singerName": "Luke Bryan",
+        "albumName": "Crash My Party",
+        "releaseYear": "2013"
+    },
+    {
+        "number": "108",
+        "coverImage": "//e.snmc.io/i/150/s/53240f71c32aff4c989044888d91daa1/1920945",
+        "singerName": "Heart",
+        "albumName": "Heart",
+        "releaseYear": "1985"
+    },
+    {
+        "number": "107",
+        "coverImage": "//e.snmc.io/i/150/s/4246ee2f72e1e643597b50ef39f20837/1676514",
+        "singerName": "Alicia Keys",
+        "albumName": "Songs in A Minor",
+        "releaseYear": "2001"
+    },
+    {
+        "number": "106",
+        "coverImage": "//e.snmc.io/i/150/s/4e84d2d714fd170de1efd99d2bf423f0/2772919",
+        "singerName": "Mumford & Sons",
+        "albumName": "Sigh No More",
+        "releaseYear": "2009"
+    },
+    {
+        "number": "105",
+        "coverImage": "//e.snmc.io/i/150/s/966c73a645117d198080f83c8bfe3e13/2268786",
+        "singerName": "The Beatles",
+        "albumName": "A Hard Day's Night",
+        "releaseYear": "1964"
+    },
+    {
+        "number": "104",
+        "coverImage": "//e.snmc.io/i/150/s/d75fb11f9b55fcb08fc65abef71dafd4/1563135",
+        "singerName": "Rascal Flatts",
+        "albumName": "Me and My Gang",
+        "releaseYear": "2006"
+    },
+    {
+        "number": "103",
+        "singerName": "Simon & Garfunkel",
+        "albumName": "The Graduate",
+        "releaseYear": "1968"
+    },
+    {
+        "number": "102",
+        "coverImage": "//e.snmc.io/i/150/s/d94e53ae234b3c038c517ee54ac30215/2098022",
+        "singerName": "Men at Work",
+        "albumName": "Business as Usual",
+        "releaseYear": "1982"
+    },
+    {
+        "number": "101",
+        "coverImage": "//e.snmc.io/i/150/s/5bea13ce04443f28ce44028ab1357c74/6519525",
+        "singerName": "Various Artists",
+        "albumName": "O Brother, Where Art Thou?",
+        "releaseYear": "2000"
+    },
+    {
+        "number": "100",
+        "singerName": "Fergie",
+        "albumName": "The Dutchess",
+        "releaseYear": "2006"
+    },
+    {
+        "number": "99",
+        "coverImage": "//e.snmc.io/i/150/s/85d0af56561217b6ef6232f8a6b55322/5069065",
+        "singerName": "Sam Smith",
+        "albumName": "In the Lonely Hour",
+        "releaseYear": "2014"
+    },
+    {
+        "number": "98",
+        "coverImage": "//e.snmc.io/i/150/s/2209c7877472fd31208b667973617cd2/2090947",
+        "singerName": "Dire Straits",
+        "albumName": "Brothers in Arms",
+        "releaseYear": "1985"
+    },
+    {
+        "number": "97",
+        "coverImage": "//e.snmc.io/i/150/s/9302faef4fa6b5d8280b9671de1ae31d/4348621",
+        "singerName": "Justin Timberlake",
+        "albumName": "FutureSex / LoveSounds",
+        "releaseYear": "2006"
+    },
+    {
+        "number": "96",
+        "coverImage": "//e.snmc.io/i/150/s/72a3075840bb8e69e56180d5210cfccb/2671764",
+        "singerName": "The Black Eyed Peas",
+        "albumName": "The E.N.D.",
+        "releaseYear": "2009"
+    },
+    {
+        "number": "95",
+        "coverImage": "//e.snmc.io/i/150/s/a9291953a7cfbb9668014ce0a3ea7f8b/1376864",
+        "singerName": "Asia",
+        "albumName": "Asia",
+        "releaseYear": "1982"
+    },
+    {
+        "number": "94",
+        "coverImage": "//e.snmc.io/i/150/s/bb3b60e6926b393dc96d9cecb8d4cd38/5774654",
+        "singerName": "Janet Jackson",
+        "albumName": "Rhythm Nation 1814",
+        "releaseYear": "1989"
+    },
+    {
+        "number": "93",
+        "coverImage": "//e.snmc.io/i/150/s/d5194400c2c36ab97f61b86083896b47/3192426",
+        "singerName": "Eminem",
+        "albumName": "Recovery",
+        "releaseYear": "2010"
+    },
+    {
+        "number": "92",
+        "coverImage": "//e.snmc.io/i/150/s/a8aeb91743859f4f4e01422003c3f991/6235369",
+        "singerName": "Pink Floyd",
+        "albumName": "The Wall",
+        "releaseYear": "1979"
+    },
+    {
+        "number": "91",
+        "coverImage": "//e.snmc.io/i/150/s/38ac860c8b5df80d0146c4984d0d94d3/4872811",
+        "singerName": "Ace of Base",
+        "albumName": "The Sign",
+        "releaseYear": "1993"
+    },
+    {
+        "number": "90",
+        "coverImage": "//e.snmc.io/i/150/s/26c8e8ab6c6d7131f32f3f3ae751cf11/1857952",
+        "singerName": "Various Artists",
+        "albumName": "Hello, Dolly! [Original Broadway Cast]",
+        "releaseYear": "1964"
+    },
+    {
+        "number": "89",
+        "coverImage": "//e.snmc.io/i/150/s/a067bc65e964e68032f6841e36b2a880/1933774",
+        "singerName": "Chicago",
+        "albumName": "Chicago [II]",
+        "releaseYear": "1970"
+    },
+    {
+        "number": "88",
+        "coverImage": "//e.snmc.io/i/150/s/c4862b7d8d08732c7fe2bcf47fdc18bf/1256177",
+        "singerName": "New Kids on the Block",
+        "albumName": "Hangin' Tough",
+        "releaseYear": "1988"
+    },
+    {
+        "number": "87",
+        "coverImage": "//e.snmc.io/i/150/s/31266c70920539c184e4baffc5b60105/8021711",
+        "singerName": "Mariah Carey",
+        "albumName": "Music Box",
+        "releaseYear": "1993"
+    },
+    {
+        "number": "86",
+        "coverImage": "//e.snmc.io/i/150/s/e0bc26af3396f5fa7f6c2c74bf703793/1851520",
+        "singerName": "John Denver",
+        "albumName": "John Denver's Greatest Hits",
+        "releaseYear": "1973 [Compilation]"
+    },
+    {
+        "number": "85",
+        "coverImage": "//e.snmc.io/i/150/s/ac7e3acd74be1439cb2b364e087817cd/2132080",
+        "singerName": "Nelly",
+        "albumName": "Country Grammar",
+        "releaseYear": "2000"
+    },
+    {
+        "number": "84",
+        "coverImage": "//e.snmc.io/i/150/s/6e7486ab53106b1500250f95c8d22df5/2525218",
+        "singerName": "Wilson Phillips",
+        "albumName": "Wilson Phillips",
+        "releaseYear": "1990"
+    },
+    {
+        "number": "83",
+        "coverImage": "//e.snmc.io/i/150/s/d8472589f3ee1cdeff21075d988bfe6c/1924725",
+        "singerName": "Shaggy",
+        "albumName": "Hot Shot",
+        "releaseYear": "2000"
+    },
+    {
+        "number": "82",
+        "coverImage": "//e.snmc.io/i/150/s/3e235a9fdd4c0b1e9ed6ea1b77357351/1238666",
+        "singerName": "Bobby Brown",
+        "albumName": "Don't Be Cruel",
+        "releaseYear": "1988"
+    },
+    {
+        "number": "81",
+        "coverImage": "//e.snmc.io/i/150/s/050d0fc5b67c307a9d571fdccd1e9922/6423646",
+        "singerName": "George Michael",
+        "albumName": "Faith",
+        "releaseYear": "1987"
+    },
+    {
+        "number": "80",
+        "coverImage": "//e.snmc.io/i/150/s/e8dc7bbfab9954777ae25771299492c1/2293522",
+        "singerName": "Elton John",
+        "albumName": "The Lion King",
+        "releaseYear": "1994"
+    },
+    {
+        "number": "79",
+        "coverImage": "//e.snmc.io/i/150/s/a158ff3ddd84569ce6cdbd8287c9ef0b/2582006",
+        "singerName": "Eric Clapton",
+        "albumName": "Unplugged",
+        "releaseYear": "1992"
+    },
+    {
+        "number": "78",
+        "coverImage": "//e.snmc.io/i/150/s/7167c7dff569287aa418c6fbddca6ca5/2999424",
+        "singerName": "Justin Bieber",
+        "albumName": "My World 2.0",
+        "releaseYear": "2010"
+    },
+    {
+        "number": "77",
+        "coverImage": "//e.snmc.io/i/150/s/d647135069989459fefd5f57206a483f/2533211",
+        "singerName": "Kelly Clarkson",
+        "albumName": "Breakaway",
+        "releaseYear": "2004"
+    },
+    {
+        "number": "76",
+        "coverImage": "//e.snmc.io/i/150/s/b2562e603b501565afc69c5cb6c76dbf/4474323",
+        "singerName": "Florida Georgia Line",
+        "albumName": "Here's to the Good Times",
+        "releaseYear": "2012"
+    },
+    {
+        "number": "75",
+        "coverImage": "//e.snmc.io/i/150/s/2b9119b691c18d2a41805a7d5a587143/1514114",
+        "singerName": "Milli Vanilli",
+        "albumName": "Girl You Know It's True",
+        "releaseYear": "1989"
+    },
+    {
+        "number": "74",
+        "coverImage": "//e.snmc.io/i/150/s/449463c5eed9931bccdcde0c1792c5d2/5718312",
+        "singerName": "Fleetwood Mac",
+        "albumName": "Fleetwood Mac",
+        "releaseYear": "1975"
+    },
+    {
+        "number": "73",
+        "coverImage": "//e.snmc.io/i/150/s/da5fef7d0aa60124d690aa2f367acc34/4171761",
+        "singerName": "Green Day",
+        "albumName": "American Idiot",
+        "releaseYear": "2004"
+    },
+    {
+        "number": "72",
+        "coverImage": "//e.snmc.io/i/150/s/e077e0203269bb50ade375ccb2de902e/9880612",
+        "singerName": "Janet Jackson",
+        "albumName": "Control",
+        "releaseYear": "1986"
+    },
+    {
+        "number": "71",
+        "coverImage": "//e.snmc.io/i/150/s/fb0b2ef599a0ddf85acd5600349f295f/2232481",
+        "singerName": "Hannah Montana",
+        "albumName": "Hannah Montana 2 / Meet Miley Cyrus",
+        "releaseYear": "2007"
+    },
+    {
+        "number": "70",
+        "coverImage": "//e.snmc.io/i/150/s/77494614577ab85fed590ca922d59405/8199775",
+        "singerName": "Backstreet Boys",
+        "albumName": "Millennium",
+        "releaseYear": "1999"
+    },
+    {
+        "number": "69",
+        "coverImage": "//e.snmc.io/i/150/s/86ae649f9d2befef8f82311b0242c160/6443621",
+        "singerName": "Supertramp",
+        "albumName": "Breakfast in America",
+        "releaseYear": "1979"
+    },
+    {
+        "number": "68",
+        "coverImage": "//e.snmc.io/i/150/s/a25f68193f77803db320d71acff030ba/2991877",
+        "singerName": "Lady Antebellum",
+        "albumName": "Need You Now",
+        "releaseYear": "2010"
+    },
+    {
+        "number": "67",
+        "coverImage": "//e.snmc.io/i/150/s/2e59f1389d63c47c3c1821843e825031/3926300",
+        "singerName": "No Doubt",
+        "albumName": "Tragic Kingdom",
+        "releaseYear": "1995"
+    },
+    {
+        "number": "66",
+        "singerName": "REO Speedwagon",
+        "albumName": "Hi Infidelity",
+        "releaseYear": "1980"
+    },
+    {
+        "number": "65",
+        "coverImage": "//e.snmc.io/i/150/s/67179a6b2fc0a4d9c411b1e98283c6ae/5925287",
+        "singerName": "Guns n' Roses",
+        "albumName": "Appetite for Destruction",
+        "releaseYear": "1987"
+    },
+    {
+        "number": "64",
+        "coverImage": "//e.snmc.io/i/150/s/a62a0c41a05c52ed596abe0c60671d96/5375436",
+        "singerName": "Taylor Swift",
+        "albumName": "1989",
+        "releaseYear": "2014"
+    },
+    {
+        "number": "63",
+        "coverImage": "//e.snmc.io/i/150/s/544dd33e494324113282dcb0caac3e2c/2023620",
+        "singerName": "Kid Rock",
+        "albumName": "Rock n Roll Jesus",
+        "releaseYear": "2007"
+    },
+    {
+        "number": "62",
+        "coverImage": "//e.snmc.io/i/150/s/8d4d0ca635edfd5135cf7539e758ee2f/8444023",
+        "singerName": "Iron Butterfly",
+        "albumName": "In-A-Gadda-Da-Vida",
+        "releaseYear": "1968"
+    },
+    {
+        "number": "61",
+        "coverImage": "//e.snmc.io/i/150/s/ef53ed740a96bb9791f0db47680f8388/1234957",
+        "singerName": "Boyz II Men",
+        "albumName": "II",
+        "releaseYear": "1994"
+    },
+    {
+        "number": "60",
+        "coverImage": "//e.snmc.io/i/150/s/6370a32b81787a098f733baddf587836/1224256",
+        "singerName": "Various Artists",
+        "albumName": "Dirty Dancing",
+        "releaseYear": "1987 [Compilation]"
+    },
+    {
+        "number": "59",
+        "coverImage": "//e.snmc.io/i/150/s/e9456205581c15a236ced744499f7703/1934710",
+        "singerName": "Andrew Lloyd Webber and Tim Rice",
+        "albumName": "Jesus Christ Superstar",
+        "releaseYear": "1970"
+    },
+    {
+        "number": "58",
+        "coverImage": "//e.snmc.io/i/150/s/7ed2d23ff4caba1378aa05fb4638c00d/8239086",
+        "singerName": "Avril Lavigne",
+        "albumName": "Let Go",
+        "releaseYear": "2002"
+    },
+    {
+        "number": "57",
+        "coverImage": "//e.snmc.io/i/150/s/96231c48791f4a8c813c3eb6729f0601/7803379",
+        "singerName": "Michael Bolton",
+        "albumName": "Time, Love & Tenderness",
+        "releaseYear": "1991"
+    },
+    {
+        "number": "56",
+        "coverImage": "//e.snmc.io/i/150/s/3aa2b36a8e330fb9f1624242f4381e0d/2728780",
+        "singerName": "Eminem",
+        "albumName": "The Eminem Show",
+        "releaseYear": "2002"
+    },
+    {
+        "number": "55",
+        "coverImage": "//e.snmc.io/i/150/s/dbd74a587630d3a25fbcb6b25947ec96/10858162",
+        "singerName": "Bruno Mars",
+        "albumName": "Unorthodox Jukebox",
+        "releaseYear": "2012"
+    },
+    {
+        "number": "54",
+        "coverImage": "//e.snmc.io/i/150/s/883d186d7c72731e628849b9d93bc07b/10941490",
+        "singerName": "The Beatles",
+        "albumName": "Sgt. Pepper's Lonely Hearts Club Band",
+        "releaseYear": "1967"
+    },
+    {
+        "number": "53",
+        "coverImage": "//e.snmc.io/i/150/s/963c2e38399888aefd2e053bcd2e6961/7528835",
+        "singerName": "Blood, Sweat & Tears",
+        "albumName": "Blood, Sweat & Tears",
+        "releaseYear": "1969"
+    },
+    {
+        "number": "52",
+        "coverImage": "//e.snmc.io/i/150/s/000b7bf89e454a0c65a007ff1c7eb92b/1388698",
+        "singerName": "Mariah Carey",
+        "albumName": "The Emancipation of Mimi",
+        "releaseYear": "2005"
+    },
+    {
+        "number": "51",
+        "coverImage": "//e.snmc.io/i/150/s/5b50cfb6a920549bf2f57c6b845978f8/1616977",
+        "singerName": "Various Artists",
+        "albumName": "High School Musical",
+        "releaseYear": "2006"
+    },
+    {
+        "number": "50",
+        "coverImage": "//e.snmc.io/i/150/s/af4880442eac7b5a8e6da6edede953ba/9948042",
+        "singerName": "Mariah Carey",
+        "albumName": "Mariah Carey",
+        "releaseYear": "1990"
+    },
+    {
+        "number": "49",
+        "coverImage": "//e.snmc.io/i/150/s/ae2a1b679460c6ee79351220a6ffff94/5928079",
+        "singerName": "Spice Girls",
+        "albumName": "Spice",
+        "releaseYear": "1996"
+    },
+    {
+        "number": "48",
+        "coverImage": "//e.snmc.io/i/150/s/14b0b5064247e3e34eee5a45e7f18ce8/1793252",
+        "singerName": "Lionel Richie",
+        "albumName": "Can't Slow Down",
+        "releaseYear": "1983"
+    },
+    {
+        "number": "47",
+        "coverImage": "//e.snmc.io/i/150/s/b41e6a52e154407695c759e3abd98b18/6696239",
+        "singerName": "Journey",
+        "albumName": "Escape",
+        "releaseYear": "1981"
+    },
+    {
+        "number": "46",
+        "coverImage": "//e.snmc.io/i/150/s/1d14d271355e5b7a5f47615006f0dec3/1313422",
+        "singerName": "Foreigner",
+        "albumName": "4",
+        "releaseYear": "1981"
+    },
+    {
+        "number": "45",
+        "coverImage": "//e.snmc.io/i/150/s/6c4a6cc0086e2b4096bc9077deaeaa42/6451534",
+        "singerName": "Pearl Jam",
+        "albumName": "Ten",
+        "releaseYear": "1991"
+    },
+    {
+        "number": "44",
+        "coverImage": "//e.snmc.io/i/150/s/c4d4c41046631b2f3d02bcedb3a751ca/1549868",
+        "singerName": "Herb Alpert & The Tijuana Brass",
+        "albumName": "Going Places",
+        "releaseYear": "1965"
+    },
+    {
+        "number": "43",
+        "coverImage": "//e.snmc.io/i/150/s/9fd4189f943b2917700976f1231f168b/2906391",
+        "singerName": "Various Artists",
+        "albumName": "Saturday Night Fever",
+        "releaseYear": "1977 [Compilation]"
+    },
+    {
+        "number": "42",
+        "coverImage": "//e.snmc.io/i/150/s/b780ae6f0ad554c8388148390de794e1/1438187",
+        "singerName": "Backstreet Boys",
+        "albumName": "Backstreet Boys",
+        "releaseYear": "1997"
+    },
+    {
+        "number": "41",
+        "coverImage": "//e.snmc.io/i/150/s/448c79c15f661c3777826de88dd00c1d/7351475",
+        "singerName": "Britney Spears",
+        "albumName": "...Baby One More Time",
+        "releaseYear": "1999"
+    },
+    {
+        "number": "40",
+        "coverImage": "//e.snmc.io/i/150/s/9107cbf66b241cef21d85d53926939c1/5094206",
+        "singerName": "Metallica",
+        "albumName": "Metallica",
+        "releaseYear": "1991"
+    },
+    {
+        "number": "39",
+        "coverImage": "//e.snmc.io/i/150/s/b09945fc86cb6b1178535d5c73a15456/1814964",
+        "singerName": "Elton John",
+        "albumName": "Goodbye Yellow Brick Road",
+        "releaseYear": "1973"
+    },
+    {
+        "number": "38",
+        "coverImage": "//e.snmc.io/i/150/s/9b1f59d8ea8248ff44c7d493de7b17a0/1983774",
+        "singerName": "Peter Frampton",
+        "albumName": "Frampton Comes Alive!",
+        "releaseYear": "1976"
+    },
+    {
+        "number": "37",
+        "coverImage": "//e.snmc.io/i/150/s/ff20e801bedb14e963d8094c0f25aeda/4314220",
+        "singerName": "Imagine Dragons",
+        "albumName": "Night Visions",
+        "releaseYear": "2012"
+    },
+    {
+        "number": "36",
+        "coverImage": "//e.snmc.io/i/150/s/95fd1311d0001d2e6513aff5714d9068/2371725",
+        "singerName": "Santana",
+        "albumName": "Supernatural",
+        "releaseYear": "1999"
+    },
+    {
+        "number": "35",
+        "coverImage": "//e.snmc.io/i/150/s/993486c61d631ce71b285deb07e30c9c/7867641",
+        "singerName": "Various Artists",
+        "albumName": "Mary Poppins",
+        "releaseYear": "1964"
+    },
+    {
+        "number": "34",
+        "coverImage": "//e.snmc.io/i/150/s/c9a272ba7b6683fb33ce6b1871b50d07/1765210",
+        "singerName": "Creed",
+        "albumName": "Human Clay",
+        "releaseYear": "1999"
+    },
+    {
+        "number": "33",
+        "coverImage": "//e.snmc.io/i/150/s/28151a33854096c4c52ade19828d1cf5/6164962",
+        "singerName": "Bon Jovi",
+        "albumName": "Slippery When Wet",
+        "releaseYear": "1986"
+    },
+    {
+        "number": "32",
+        "coverImage": "//e.snmc.io/i/150/s/5d00c1845e42b054267439fe50f50791/6807170",
+        "singerName": "Evanescence",
+        "albumName": "Fallen",
+        "releaseYear": "2003"
+    },
+    {
+        "number": "31",
+        "coverImage": "//e.snmc.io/i/150/s/ca84e679e151bf6cdcf537adf6b0f803/10914800",
+        "singerName": "Pink Floyd",
+        "albumName": "The Dark Side of the Moon",
+        "releaseYear": "1973"
+    },
+    {
+        "number": "30",
+        "coverImage": "//e.snmc.io/i/150/s/f5156483a7ffb3a2d32bad62caccde23/6644785",
+        "singerName": "Hootie & The Blowfish",
+        "albumName": "Cracked Rear View",
+        "releaseYear": "1994"
+    },
+    {
+        "number": "29",
+        "coverImage": "//e.snmc.io/i/150/s/f1c42f87f875b2677d81bc7add3e1677/2777009",
+        "singerName": "Garth Brooks",
+        "albumName": "No Fences",
+        "releaseYear": "1990"
+    },
+    {
+        "number": "28",
+        "coverImage": "//e.snmc.io/i/150/s/22bd01fc7222cc01d7761d4d990da16b/1962592",
+        "singerName": "Linkin Park",
+        "albumName": "Hybrid Theory",
+        "releaseYear": "2000"
+    },
+    {
+        "number": "27",
+        "coverImage": "//e.snmc.io/i/150/s/c380cd0cc8be80753de2f85a6ccfbb10/8219595",
+        "singerName": "Daughtry",
+        "albumName": "Daughtry",
+        "releaseYear": "2006"
+    },
+    {
+        "number": "26",
+        "coverImage": "//e.snmc.io/i/150/s/52bdb065d6c1c01862a9f2bfdf546e91/6601092",
+        "singerName": "Norah Jones",
+        "albumName": "Come Away With Me",
+        "releaseYear": "2002"
+    },
+    {
+        "number": "25",
+        "coverImage": "//e.snmc.io/i/150/s/e7f656e12eb3e1e84e91932062b87dec/1537955",
+        "singerName": "Def Leppard",
+        "albumName": "Hysteria",
+        "releaseYear": "1987"
+    },
+    {
+        "number": "24",
+        "coverImage": "//e.snmc.io/i/150/s/ea27c471a521118ea4174a50573d0530/1221689",
+        "singerName": "M.C. Hammer",
+        "albumName": "Please Hammer Don't Hurt 'Em",
+        "releaseYear": "1990"
+    },
+    {
+        "number": "23",
+        "coverImage": "//e.snmc.io/i/150/s/d9e2da8f1f9700e8eed5f04e05d34184/2753978",
+        "singerName": "Various Artists",
+        "albumName": "The Bodyguard",
+        "releaseYear": "1992"
+    },
+    {
+        "number": "22",
+        "coverImage": "//e.snmc.io/i/150/s/005edab05d18c1a4c55bae7cd7b81a6e/3840774",
+        "singerName": "Carrie Underwood",
+        "albumName": "Some Hearts",
+        "releaseYear": "2005"
+    },
+    {
+        "number": "21",
+        "coverImage": "//e.snmc.io/i/150/s/699a75f45449741854ab2763fc96ca20/10289827",
+        "singerName": "Céline Dion",
+        "albumName": "Falling Into You",
+        "releaseYear": "1996"
+    },
+    {
+        "number": "20",
+        "coverImage": "//e.snmc.io/i/150/s/045681710af98424aa23d8edfc5e681e/1274431",
+        "singerName": "Billy Ray Cyrus",
+        "albumName": "Some Gave All",
+        "releaseYear": "1992"
+    },
+    {
+        "number": "19",
+        "coverImage": "//e.snmc.io/i/150/s/604ea15c1f1e9f68843a2fc4f44eaddf/1226773",
+        "singerName": "Paula Abdul",
+        "albumName": "Forever Your Girl",
+        "releaseYear": "1988"
+    },
+    {
+        "number": "18",
+        "coverImage": "//e.snmc.io/i/150/s/a499d0bf0725d310155a38a2c59e089d/10848202",
+        "singerName": "Taylor Swift",
+        "albumName": "Taylor Swift",
+        "releaseYear": "2006"
+    },
+    {
+        "number": "17",
+        "coverImage": "//e.snmc.io/i/150/s/cd156fcf1dcbe55b7a62bb5642c4773b/6107005",
+        "singerName": "Christophe Beck",
+        "albumName": "Frozen",
+        "releaseYear": "2013"
+    },
+    {
+        "number": "16",
+        "coverImage": "//e.snmc.io/i/150/s/47a183e1fc64f51e746ab4b55cbc8393/1401607",
+        "singerName": "Usher",
+        "albumName": "Confessions",
+        "releaseYear": "2004"
+    },
+    {
+        "number": "15",
+        "coverImage": "//e.snmc.io/i/150/s/f0a52f33e88d34ca570d0e42d8e3a7e7/5709996",
+        "singerName": "Fleetwood Mac",
+        "albumName": "Rumours",
+        "releaseYear": "1977"
+    },
+    {
+        "number": "14",
+        "coverImage": "//e.snmc.io/i/150/s/f2362d5a92beb10ef6e3b40b8cecea7e/2517768",
+        "singerName": "Shania Twain",
+        "albumName": "Come On Over",
+        "releaseYear": "1997"
+    },
+    {
+        "number": "13",
+        "coverImage": "//e.snmc.io/i/150/s/fed5a0d91d63e9cd37dac9dfe3280d0f/8240875",
+        "singerName": "Herb Alpert's Tijuana Brass",
+        "albumName": "Whipped Cream & Other Delights",
+        "releaseYear": "1965"
+    },
+    {
+        "number": "12",
+        "coverImage": "//e.snmc.io/i/150/s/3026957bf763b2d71d1eaab7e48b4a5b/2366794",
+        "singerName": "Lady Gaga",
+        "albumName": "The Fame",
+        "releaseYear": "2008"
+    },
+    {
+        "number": "11",
+        "coverImage": "//e.snmc.io/i/150/s/6c1d0bc6df924b6ad1ea9f6b0d56c6f5/5144864",
+        "singerName": "Whitney Houston",
+        "albumName": "Whitney Houston",
+        "releaseYear": "1985"
+    },
+    {
+        "number": "10",
+        "coverImage": "//e.snmc.io/i/150/s/4a1081c957b8c021c2ab60e6c9ecc492/7401115",
+        "singerName": "Carole King",
+        "albumName": "Tapestry",
+        "releaseYear": "1971"
+    },
+    {
+        "number": "9",
+        "coverImage": "//e.snmc.io/i/150/s/ae4f773c2280ab02ef4f6c68bf04c881/2510303",
+        "singerName": "Nickelback",
+        "albumName": "All the Right Reasons",
+        "releaseYear": "2005"
+    },
+    {
+        "number": "8",
+        "coverImage": "//e.snmc.io/i/150/s/1438283075637055a607c06fad957790/1834547",
+        "singerName": "Maurice Jarre",
+        "albumName": "Doctor Zhivago",
+        "releaseYear": "1965"
+    },
+    {
+        "number": "7",
+        "coverImage": "//e.snmc.io/i/150/s/6741c10f7dfbd4c623d0d65ad3875a1d/2029486",
+        "singerName": "Alanis Morissette",
+        "albumName": "Jagged Little Pill",
+        "releaseYear": "1995"
+    },
+    {
+        "number": "6",
+        "coverImage": "//e.snmc.io/i/150/s/bb4de0f1428dd11b59838786be511dba/1723296",
+        "singerName": "Garth Brooks",
+        "albumName": "Ropin' the Wind",
+        "releaseYear": "1991"
+    },
+    {
+        "number": "5",
+        "coverImage": "//e.snmc.io/i/150/s/0128b98aedd82a668aea148557f9bbf5/10215530",
+        "singerName": "Bruce Springsteen",
+        "albumName": "Born in the U.S.A.",
+        "releaseYear": "1984"
+    },
+    {
+        "number": "4",
+        "coverImage": "//e.snmc.io/i/150/s/cdcc613f6e706b30ec68ff3052ec948b/2431642",
+        "singerName": "Taylor Swift",
+        "albumName": "Fearless",
+        "releaseYear": "2008"
+    },
+    {
+        "number": "3",
+        "coverImage": "//e.snmc.io/i/150/s/735b0c9495dd05d33009fe5a06efbfff/6190855",
+        "singerName": "Michael Jackson",
+        "albumName": "Thriller",
+        "releaseYear": "1982"
+    },
+    {
+        "number": "2",
+        "coverImage": "//e.snmc.io/i/150/s/c31ebdf20a01a2136346caede245bd12/2279500",
+        "singerName": "Various Artists",
+        "albumName": "The Sound of Music",
+        "releaseYear": "1965"
+    },
+    {
+        "number": "1",
+        "coverImage": "//e.snmc.io/i/150/s/9815417ad429626e42f16f2bc829bfac/3400757",
+        "singerName": "Adele",
+        "albumName": "21",
+        "releaseYear": "2011"
+    }
+]
