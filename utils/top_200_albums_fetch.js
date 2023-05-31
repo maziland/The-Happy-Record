@@ -26,11 +26,12 @@ async function getAlbumsFromPage(url) {
     table_rows = table.findAll("td", "main_entry").forEach(entry => {
         row = entry.parent;
         album = {
-            "number": row.find("td", "number").text,
+            "name": nameTrim(row.find("td", "main_entry").find("h3").find("a").text),
+            "artist": nameTrim(row.find("td", "main_entry").find("h2").find("a").text),
+            "rank": row.find("td", "number").text,
             "coverImage": row.find("td", "list_art").find("img").attrs["data-src"],
-            "singerName": nameTrim(row.find("td", "main_entry").find("h2").find("a").text),
-            "albumName": nameTrim(row.find("td", "main_entry").find("h3").find("a").text),
-            "releaseYear": row.find("td", "main_entry").find("h3").find("span").text.replace("(", "").replace(")", "")
+            "releaseYear": row.find("td", "main_entry").find("h3").find("span").text.replace("(", "").replace(")", ""),
+            "price": parseFloat((Math.random() * 90 + 10).toFixed(2))
         }
         albums = albums.concat(album);
     });
