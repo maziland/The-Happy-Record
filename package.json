@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/maziland/The-Happy-Record#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.1.1",
+    "express": "^4.18.2",
+    "mongod": "^2.0.0",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.2"
   }
 }
