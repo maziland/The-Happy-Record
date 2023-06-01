@@ -47,7 +47,7 @@ async function getAlbumsFromAllPages() {
         await getAlbumsFromPage(url);
         index++;
     }
-    fs.writeFile("data/top_albums.json", JSON.stringify(albums), (err) => {
+    fs.writeFile("data/top_albums.json", JSON.stringify(albums.reverse()), (err) => {
         if (err) throw (err);
     });
     console.log("finished");

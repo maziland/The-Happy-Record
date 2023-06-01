@@ -24,7 +24,6 @@ userService.uploadJson(JSON.parse('{"_id":"5","_name":"user"}'), override = true
 app.use(express.static('public'))
 
 app.get('/', async (req, res) => {
-    console.log("aaa");
     const albumModel = require("./models/album").albumModel
     const collection = albumModel.collection;
     const albums = await collection.find({}).toArray();
