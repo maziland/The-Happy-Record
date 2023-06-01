@@ -25,8 +25,7 @@ app.use(express.static('public'))
 
 app.get('/', async (req, res) => {
     console.log("aaa");
-    const model = require("./models/album")
-    const albumModel = model.albumModel;
+    const albumModel = require("./models/album").albumModel
     const collection = albumModel.collection;
     const albums = await collection.find({}).toArray();
     const renderedHtml = await ejs.renderFile('public/index.ejs', { albums });

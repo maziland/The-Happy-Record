@@ -1,5 +1,4 @@
-const model = require("../models/album")
-const albumModel = model.albumModel;
+const albumModel = require("../models/album").albumModel;
 
 async function deleteAlbums() {
     await albumModel.deleteMany({});

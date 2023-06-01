@@ -1,5 +1,4 @@
-const model = require("../models/user")
-const userModel = model.userModel;
+const userModel = require("../models/user").userModel;
 
 async function deleteUsers() {
     await userModel.deleteMany({});
