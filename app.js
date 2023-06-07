@@ -4,13 +4,12 @@ const path = require("path")
 const fs = require("fs")
 const mongoose = require("mongoose")
 require("dotenv").config()
-const ejs = require('ejs');
 
 const albumService = require("./services/album")
 const userService = require("./services/user")
 
+// Connect to DB and insert data
 mongoose.connect(process.env.CONNECTION_STRING);
-
 fs.readFile("data/top_albums.json", 'utf8', function (err, data) {
     try {
         albumService.uploadJson((JSON.parse(data)), override = true);
@@ -19,17 +18,17 @@ fs.readFile("data/top_albums.json", 'utf8', function (err, data) {
         console.error("Problem reading albums json");
     }
 });
-userService.uploadJson(JSON.parse('{"_id":"5","_name":"user"}'), override = true);
+userService.uploadJson(JSON.parse('{"_id":"7","_name":"user"}'), override = true);
 
-app.use(express.static('public'))
+// Set up app
 
-app.get('/', async (req, res) => {
-    const albumModel = require("./models/album").albumModel
-    const collection = albumModel.collection;
-    const albums = await collection.find({}).toArray();
-    const renderedHtml = await ejs.renderFile('public/index.ejs', { albums });
-    res.send(renderedHtml);
-});
+app.use(express.static('public'));
+
+app.use('/', require('./routes/router'));
+
+const mw = require('./routes/handle_404')
+app.use(mw)
+// app.use(require("./routes/handle_404"));
 
 app.listen(process.env.LISTEN_PORT || 3000)
 console.log(`Running at Port ${process.env.LISTEN_PORT || 3000}`);
