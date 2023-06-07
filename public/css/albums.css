@@ -1,29 +1,119 @@
-body {
-    background-color: #f8f9fa;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-.jumbotron {
-    background-color: #343a40;
-    color: #fff;
-    padding: 2rem 1rem;
+:root {
+  --dark-grey: #333333;
+  --medium-grey: #636363;
+  --light-grey: #eeeeee;
+  --ash: #f4f4f4;
+  --primary-color: #2b72fb;
+  --white: white;
+  --border: 1px solid var(--light-grey);
+  --shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+body {
+  font-family: inherit;
+  background-color: var(--white);
+  color: var(--dark-grey);
+  letter-spacing: -0.4px;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.navbar {
+  border-bottom: var(--border);
+}
+
+.navbar-brand .active {
+  font-weight: bold;
+}
+
+.nav-link {
+  display: inline;
+  color: rgba(51, 51, 51, .55);
+}
+
+.nav-link:hover {
+  color: rgba(51, 51, 51, .75);
 }
 
 .album-card {
-    border: black;
-    transition: transform 0.3s ease-in-out;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  background-color: #ffffff65;
+  width: 250px;
 }
 
 .album-card:hover {
-    transform: scale(1.05);
+  transform: translateY(-5px);
 }
 
-.album-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
+.card-img-top {
+  object-fit: contain;
 }
 
-.album-card h5 {
-    font-size: 1.2rem;
-    margin-top: 1rem;
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666666;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: #7d0ae8;
+  border-color: #7d0ae8;
+}
+
+.search input {
+  background-image: url("/img/icons8-search.svg");
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+  background-color: var(--ash);
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem;
+  padding-left: 2.4rem;
+  font-size: 16px;
+  width: 100%;
+  border: var(--border);
+}
+
+.search .bx-search {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  font-size: 1.3rem;
+  transform: translateY(-50%);
+  opacity: 0.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 20px;
+  }
 }
