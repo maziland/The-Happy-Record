@@ -5,16 +5,13 @@ async function mainAlbums(req, res) {
     const albumModel = require("../models/album").albumModel
     const collection = albumModel.collection;
     const albums = await collection.find({}).toArray();
-    const renderedHtml = await ejs.renderFile('views/albums.ejs', { albums });
-    res.send(renderedHtml);
+    res.render('albums.ejs', { albums });
 };
 
 async function homepage(req, res) {
-    const albumModel = require("../models/album").albumModel
-    const collection = albumModel.collection;
-    const albums = await collection.find({}).toArray();
-    const renderedHtml = await ejs.renderFile('views/homepage.ejs', { albums });
-    res.send(renderedHtml);
+    username = req.session.username;
+    console.log(res.locals)
+    res.render("homepage.ejs", { username });
 };
 
 module.exports = { mainAlbums, homepage };

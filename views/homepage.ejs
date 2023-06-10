@@ -1,5 +1,9 @@
 <%- include('partials/header') %>
     <div class="container">
-        <h1>Welcome!!!</h1>
+        <% if (username) { %>
+            <p>Welcome, <%= username %>!</p>
+            <% } else { %>
+                <p>Welcome!</p>
+                <% } %>
     </div>
     <%- include('partials/footer') %>
