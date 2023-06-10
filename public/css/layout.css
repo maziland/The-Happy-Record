@@ -35,6 +35,7 @@ body {
 
 .navbar {
     border-bottom: var(--border);
+    margin-bottom: 15px;
 }
 
 .navbar-brand .active {
