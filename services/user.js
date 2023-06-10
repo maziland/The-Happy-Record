@@ -6,11 +6,11 @@ async function deleteUsers() {
     return;
 };
 
-async function addUser(id, name) {
+async function addUser(username, userPassword) {
     const user = new userModel({
-        _id: id,
-        _name: name,
-    })
+        name: username,
+        password: userPassword
+    });
 
     return await user.save()
 }
