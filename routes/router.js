@@ -10,8 +10,8 @@ router.get("/albums", albumsController.mainAlbums);
 router.post("/login", authController.login);
 router.get("/login", authController.renderLoginPage);
 router.post("/login", authController.login);
+router.get("/register", authController.renderRegisterPage);
 router.get("/register", authController.register);
-router.post("/register", authController.renderRegisterPage);
 // router.get("/myaccount", userController.myAccount);
 router.get("/myaccount", authController.renderLoginPage);
 

@@ -10,7 +10,6 @@ async function mainAlbums(req, res) {
 
 async function homepage(req, res) {
     username = req.session.username;
-    console.log(res.locals)
     res.render("homepage.ejs", { username });
 };
 
