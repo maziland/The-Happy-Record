@@ -1,0 +1,33 @@
+.split-container {
+    display: flex;
+    flex-direction: row;
+    height: vh;
+}
+
+.split-left {
+    width: 50%;
+    padding: 30px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.split-right {
+    width: 50%;
+}
+
+.split-image {
+    flex: 1;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.major {
+    font-size: 1.25rem;
+}
+
+.list {
+    text-align: left;
+    font-size: 1.10rem;
+    display: inline-block;
+}

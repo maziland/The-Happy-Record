@@ -1,9 +1,27 @@
 <%- include('partials/header') %>
-    <div class="container">
-        <% if (username) { %>
-            <p>Welcome, <%= username %>!</p>
-            <% } else { %>
-                <p>Welcome!</p>
-                <% } %>
+<link rel="stylesheet" href="/css/homepage.css">
+<section>
+    <div class="split-container">
+        <div class="split-left">
+            <h1>The Happy Record</h1>
+            <h3>A Melodic Haven for Music Lovers</h3>
+            <p class="major">Discover, Collect, and Immerse Yourself in the Rhythms 🎶</p>
+            <ul class="list">
+                <li>Explore a vast music collection: Find your groove among diverse genres and eras</li>
+                <li>Build your dream collection and create your own library
+                </li>
+                <li>Stay in tune with the latest: Get updates on new releases, limited editions, and exclusive
+                </li>
+            </ul>
+            <% if (!authenticated) { %>
+            <a class="btn btn-outline-primary" href="/login">LOGIN NOW</a>
+            <% }; %>
+            <a class="btn btn-outline-secondary" href="/albums">BROWSE ALBUMS</a>
+        </div>
+
+        <div class="split-right">
+            <img class="split-image" src="img/producer.jpg">
+        </div>
     </div>
-    <%- include('partials/footer') %>
+</section>
+<%- include('partials/footer') %>
