@@ -13,10 +13,12 @@
                 <li>Stay in tune with the latest: Get updates on new releases, limited editions, and exclusive
                 </li>
             </ul>
-            <% if (!authenticated) { %>
-            <a class="btn btn-outline-primary" href="/login">LOGIN NOW</a>
-            <% }; %>
-            <a class="btn btn-outline-secondary" href="/albums">BROWSE ALBUMS</a>
+            <div>
+                <% if (!authenticated) { %>
+                <a class="btn btn-outline-primary" href="/login">LOGIN NOW</a>
+                <% }; %>
+                <a class="btn btn-outline-secondary" href="/albums">BROWSE ALBUMS</a>
+            </div>
         </div>
 
         <div class="split-right">
