@@ -1,27 +1,27 @@
 <%- include('partials/header') %>
-    <link rel="stylesheet" href="/css/login.css">
+<link rel="stylesheet" href="/css/login.css">
 
-    <div class="container album-container">
-        <div class="row">
-            <% albums.forEach(function(album) { %>
-                <div class="col-md-3 g-3">
-                    <div class="card album-card">
-                        <img src="<%= album.coverImage %>" class="card-img-top" alt="<%= album.title %>">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <%= album.name %>
-                            </h5>
-                            <p class="card-text">
-                                <%= album.artist %>
-                            </p>
-                            <p class="card-text">
-                                Rank: #<%= album.rank %>
-                            </p>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
-                        </div>
-                    </div>
+<div class="container album-container">
+    <div class="row">
+        <% albums.forEach(function(album) { %>
+        <div class="col-md-3 g-3">
+            <div class="card album-card">
+                <img src="<%= album.coverImage %>" class="card-img-top" alt="<%= album.title %>">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <%= album.name %>
+                    </h5>
+                    <p class="card-text">
+                        <%= album.artist %>
+                    </p>
+                    <p class="card-text">
+                        Rank: #<%= album.rank %>
+                    </p>
+                    <a href="#" class="btn btn-outline-secondary">Add to Cart</a>
                 </div>
-                <% }); %>
+            </div>
         </div>
+        <% }); %>
     </div>
-    <%- include('partials/footer') %>
+</div>
+<%- include('partials/footer') %>

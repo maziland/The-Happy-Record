@@ -1,25 +1,29 @@
 <%- include('partials/header') %>
-    <link rel="stylesheet" href="/css/login.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="/css/login.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <div class="container col-md-3">
-        <form action="/login" method="post">
-            <h1>Login</h1>
-            <div class="input-field">
-                <input type="text" name="username" id="username" placeholder="Enter Username">
-            </div>
-            <div class="input-field">
-                <input type="password" name="password" placeholder="Enter Password" autocomplete="current-password"
-                    required="" id="id_password">
-                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
-            </div>
-            <input type="submit" value="Login">
-        </form>
-        <div>
-            <% if (errorMessage) { %>
-                <script> console.log("<%- errorMessage %>"); Swal.fire({ icon: 'info', text: "<%- errorMessage %>", position: 'top-end', timer: 1500 });</script>
-                <% } %>
+<div class="container col-md-3">
+    <form action="/login" method="post">
+        <h1>Login</h1>
+        <div class="input-field">
+            <input type="text" name="username" id="username" placeholder="Enter Username">
         </div>
+        <div class="input-field">
+            <input type="password" name="password" placeholder="Enter Password" autocomplete="current-password"
+                required="" id="id_password">
+            <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+        </div>
+        <br>
+        <p>Don't have an account?
+            <a href="/register">Register</a>
+        </p>
+        <input type="submit" value="Login">
+    </form>
+    <div>
+        <% if (errorMessage) { %>
+        <script> console.log("<%- errorMessage %>"); Swal.fire({ icon: 'info', text: "<%- errorMessage %>", position: 'top-end', timer: 1500 });</script>
+        <% } %>
     </div>
-    <script src="js/show_password.js"></script>
-    <%- include('partials/footer') %>
+</div>
+<script src="js/show_password.js"></script>
+<%- include('partials/footer') %>
