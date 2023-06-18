@@ -9,8 +9,7 @@ async function mainAlbums(req, res) {
 };
 
 async function homepage(req, res) {
-    username = req.session.username;
-    res.render("homepage.ejs", { username });
+    res.render("homepage.ejs");
 };
 
 module.exports = { mainAlbums, homepage };

@@ -20,10 +20,12 @@
                 <a class="btn btn-outline-secondary" href="/albums">BROWSE ALBUMS</a>
             </div>
         </div>
-
         <div class="split-right">
             <img class="split-image" src="img/producer.jpg">
         </div>
+        <% if (locals.message) { %>
+        <script>Swal.fire({ icon: 'info', text: "<%- locals.message %>", position: 'top-end', timer: 2500 });</script>
+        <% } %>
     </div>
 </section>
 <%- include('partials/footer') %>

@@ -5,6 +5,7 @@ const fs = require("fs")
 const mongoose = require("mongoose")
 require("dotenv").config()
 const session = require('express-session');
+const flash = require('connect-flash');
 
 const albumService = require("./services/album")
 const userService = require("./services/user")
@@ -40,6 +41,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
+app.use(flash());
 app.use('/', require('./routes/router'));
 
 app.use(require('./routes/middlewares/handle_404'));

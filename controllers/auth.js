@@ -6,8 +6,9 @@ async function renderLoginPage(req, res) {
         if (req.session.username) {
             const errorMessage = `You are already logged in as '${req.session.username}'`;
             res.render('login.ejs', { errorMessage });
+        } else {
+            res.render('login.ejs', { errorMessage: null });
         }
-        res.render('login.ejs', { errorMessage: null });
     } catch (error) {
         // Handle error
         console.error(error);
@@ -55,4 +56,29 @@ async function renderRegisterPage(req, res) {
     }
 }
 
-module.exports = { login, renderLoginPage, register, renderRegisterPage };
+async function logout(req, res) {
+    try {
+        if (req.session) {
+            // Retrieve any flash messages before destroying the session
+            const errorMessage = req.flash('error');
+            const successMessage = req.flash('success');
+
+            req.session.destroy(err => {
+                if (err) {
+                    // If there was an error
+                    res.status(400).send("There was an error in logging you out")
+                } else {
+                    res.redirect('/');
+                }
+            });
+        } else {
+            res.end();
+        }
+    } catch (error) {
+        // Handle error
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+}
+
+module.exports = { login, renderLoginPage, register, renderRegisterPage, logout };
