@@ -27,9 +27,27 @@ form input[type="submit"] {
 
 .fa-eye {
     position: absolute;
-    top: 35%;
+    top: 30%;
     right: 4%;
     cursor: pointer;
     color: lightgray;
     align-items: center;
+}
+
+.fa-eye-slash {
+    position: absolute;
+    top: 30%;
+    right: 4%;
+    cursor: pointer;
+    color: lightgray;
+    align-items: center;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+.error {
+    border: 1px solid red;
 }

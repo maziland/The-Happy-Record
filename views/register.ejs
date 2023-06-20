@@ -2,20 +2,32 @@
 <link rel="stylesheet" href="/css/register.css">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <div class="container col-md-4  ">
-    <form action="/register" method="post">
+    <form id="register-form" name="register-form" action="/register" method="post" onsubmit="return ">
         <h1>Register</h1>
         <div class="input-field">
             <input type="text" name="username" id="username" placeholder="Enter Username">
+            <div class="error-message"></div>
+        </div>
+        <div class="input-field">
+            <input type="email" name="email" id="email" placeholder="Enter email">
+            <div class="error-message"></div>
         </div>
         <div class="input-field">
             <input type="password" name="password" placeholder="Enter Password" autocomplete="current-password"
-                required="" id="id_password">
-            <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                required="" id="password">
+            <i class="far fa-eye" id="togglePassword"></i>
+            <div class="error-message"></div>
+        </div>
+        <div class="input-field">
+            <input type="password" name="confirm-password" placeholder="Confirm Password"
+                autocomplete="current-password" required="" id="confirm-password">
+            <i class="far fa-eye" id="togglePasswordConfirmation"></i>
+            <div class="error-message"></div>
         </div>
         <p>Already have an account?
             <a href="/login">Login</a>
         </p>
-        <input type="submit" value="Register">
+        <input type="submit" id="register-button" value="Register">
     </form>
     <div>
         <% if (errorMessage) { %>
@@ -23,5 +35,6 @@
         <% } %>
     </div>
 </div>
-<script src="js/show_password.js"></script>
+<script src="js/register.js"></script>
+<!-- <script src="js/show_password.js"></script> -->
 <%- include('partials/footer') %>
