@@ -3,10 +3,11 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <div class="container col-md-3">
-    <form action="/login" method="post">
+    <form id="login-form" action="/login" method="post">
         <h1>Login</h1>
         <div class="input-field">
             <input type="text" name="username" id="username" placeholder="Enter Username">
+            <div class="error-message"></div>
         </div>
         <div class="input-field">
             <input type="password" name="password" placeholder="Enter Password" autocomplete="current-password"
@@ -25,5 +26,5 @@
         <% } %>
     </div>
 </div>
-<script src="js/show_password.js"></script>
+<script src="js/login.js"></script>
 <%- include('partials/footer') %>

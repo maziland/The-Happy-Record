@@ -20,6 +20,7 @@ async function login(req, res) {
     try {
         if (req.get('Content-Type') === 'application/x-www-form-urlencoded') {
             req.session.username = req.body.username;
+            console.log(req.session.username);
             return res.redirect('/');
         }
         throw new Error('Invalid request method');
@@ -30,12 +31,10 @@ async function login(req, res) {
     }
 }
 
-
-
 async function register(req, res) {
     try {
         if (req.get('Content-Type') === 'application/x-www-form-urlencoded') {
-            req.session.username = req.body.username;
+            const { username, email, password } = req.body;
             return res.redirect('/');
         }
         throw new Error('Invalid request method');
@@ -60,9 +59,6 @@ async function logout(req, res) {
     try {
         if (req.session) {
             // Retrieve any flash messages before destroying the session
-            const errorMessage = req.flash('error');
-            const successMessage = req.flash('success');
-
             req.session.destroy(err => {
                 if (err) {
                     // If there was an error
