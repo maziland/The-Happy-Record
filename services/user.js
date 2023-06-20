@@ -1,4 +1,4 @@
-const userModel = require("../models/user").userModel;
+const User = require("../models/user").userModel;
 
 async function deleteUsers() {
     await userModel.deleteMany({});
@@ -6,13 +6,16 @@ async function deleteUsers() {
     return;
 };
 
-async function addUser(username, userPassword) {
-    const user = new userModel({
-        name: username,
-        password: userPassword
-    });
+async function addUser(username, userPassword, userEmail) {
+    let newUser = new User();
 
-    return await user.save()
+    // Initialize newUser object with request data 
+    newUser.username = username;
+    newUser.email = userEmail;
+
+    // Call setPassword function to hash password 
+    newUser.setPassword(userPassword);
+    return await newUser.save()
 }
 
 async function uploadJson(json, override = false) {

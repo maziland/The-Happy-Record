@@ -34,7 +34,10 @@ async function login(req, res) {
 async function register(req, res) {
     try {
         if (req.get('Content-Type') === 'application/x-www-form-urlencoded') {
+            // Getting input from form
             const { username, email, password } = req.body;
+            // Register the user
+            bla = await usersService.addUser(username, password, email);
             return res.redirect('/');
         }
         throw new Error('Invalid request method');

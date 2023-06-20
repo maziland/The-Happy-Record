@@ -13,4 +13,6 @@ fs.readFile("./data/top_albums.json", 'utf8', function (err, data) {
         console.error("Problem reading albums json");
     }
 });
-userService.uploadJson(JSON.parse('{"name":"admin","password":"123"}'), override = true);
+// userService.uploadJson(JSON.parse('{"name":"admin","email":"test@test.com","password":"123"}'), override = true);
+userService.addUser("admin", "password", "admin@admin.com");
+
