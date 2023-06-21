@@ -25,7 +25,7 @@
             </a>
             <a href="/albums" class="nav-item nav-link">Albums</a>
             </a>
-            <form class="search" role="search">
+            <form id="searchForm" class="search" role="search">
                 <input type="search" name="search" placeholder="Search" />
                 <i class="bx bx-search" aria-hidden="true"></i>
             </form>
@@ -75,15 +75,4 @@
         </div>
     </nav>
 
-    <script>
-        $(document).ready(function () {
-            $('#shopping-cart').hover(
-                function () {
-                    $('#shopping-cart-icon').addClass('fa-bounce');
-                },
-                function () {
-                    $('#shopping-cart-icon').removeClass('fa-bounce');
-                }
-            );
-        });
-    </script>
+    <script src="/js/search.js"></script>

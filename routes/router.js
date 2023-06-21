@@ -17,5 +17,6 @@ router.post("/register", authController.register);
 router.get("/logout", authController.logout)
 // router.get("/myaccount", userController.myAccount);
 router.get("/myaccount", authController.renderLoginPage);
+router.get("/search", albumsController.search);
 
 module.exports = router;
