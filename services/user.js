@@ -1,7 +1,7 @@
-const User = require("../models/user").userModel;
+const User = require("../models/user").User;
 
 async function deleteUsers() {
-    await userModel.deleteMany({});
+    await User.deleteMany({});
     console.log("Deleted users collection");
     return;
 };
@@ -20,9 +20,9 @@ async function addUser(username, userPassword, userEmail) {
 
 async function uploadJson(json, override = false) {
     if (override === true) {
-        await userModel.collection.drop();
+        await User.collection.drop();
     }
-    await userModel.insertMany(json);
+    await User.insertMany(json);
 };
 
 module.exports = { addUser, uploadJson, deleteUsers };
