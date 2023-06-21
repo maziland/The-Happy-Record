@@ -19,11 +19,28 @@ async function renderLoginPage(req, res) {
 async function login(req, res) {
     try {
         if (req.get('Content-Type') === 'application/x-www-form-urlencoded') {
-            req.session.username = req.body.username;
-            console.log(req.session.username);
+            const { username, password } = req.body;
+            // Validate login
+            user = await usersService.getUser(username);
+            if (user) {
+                // User exists
+                if (user.validPassword(password)) {
+                    // Login is successful
+                    req.session.username = username;
+                    console.log(`${username} signed in!`);
+                    return res.redirect('/');
+                } else {
+                    // Wrong password
+                    return res.render("login.ejs", { errorMessage: "Wrong password!" });
+                }
+            } else {
+                // User doe's not exist
+                return res.render("login.ejs", { errorMessage: "User doe's not exist!" });
+            }
+
             return res.redirect('/');
         }
-        throw new Error('Invalid request method');
+        res.status(400).send('Wrong Content-Type');
     } catch (error) {
         // Handle error
         console.error(error);
@@ -36,15 +53,17 @@ async function register(req, res) {
         if (req.get('Content-Type') === 'application/x-www-form-urlencoded') {
             // Getting input from form
             const { username, email, password } = req.body;
+
             // Register the user
-            bla = await usersService.addUser(username, password, email);
-            return res.redirect('/');
+            await usersService.addUser(username, password, email);
+            // return res.render("login.ejs", { errorMessage: `Welcome ${username}!\nPlease login :)` });
+            return res.redirect(`/login?message=${encodeURIComponent(`Welcome ${username}!\nPlease login :)`)}`);
+
         }
-        throw new Error('Invalid request method');
+        res.status(400).send('Wrong Content-Type');
     } catch (error) {
-        // Handle error
-        console.error(error);
-        res.status(500).send('Internal Server Error');
+        // Handle error - user already exists
+        res.render("register.ejs", { errorMessage: "User already exists" });
     }
 };
 

@@ -4,7 +4,9 @@ const crypto = require("crypto");
 const UserSchema = mongoose.Schema({
     username: {
         type: String,
-        required: true
+        required: true,
+        unique: true,
+        index: true
     },
     email: {
         type: String,
@@ -17,7 +19,7 @@ const UserSchema = mongoose.Schema({
     isAdmin: {
         type: Number,
         required: false
-    },
+    }
 });
 
 UserSchema.methods.setPassword = function (password) {

@@ -22,7 +22,7 @@
     </form>
     <div>
         <% if (errorMessage) { %>
-        <script> console.log("<%- errorMessage %>"); Swal.fire({ icon: 'info', text: "<%- errorMessage %>", position: 'top-end', timer: 2500 });</script>
+        <script> Swal.fire({ icon: 'error', text: "<%- errorMessage %>", position: 'top-end', timer: 2500 });</script>
         <% } %>
     </div>
 </div>

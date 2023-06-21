@@ -53,4 +53,11 @@ $(document).ready(function () {
             this.submit();
         }
     });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const msg = urlParams.get('message')
+    if (msg != null) {
+        Swal.fire({ icon: 'success', text: msg, position: 'top-end', timer: 2500 });
+        setTimeout(() => window.location.replace("/login"), 2500);
+    }
 });

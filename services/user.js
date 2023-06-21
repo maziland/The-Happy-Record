@@ -1,11 +1,25 @@
 const User = require("../models/user").User;
 
+// function to delete all users from users collection
 async function deleteUsers() {
     await User.deleteMany({});
     console.log("Deleted users collection");
     return;
 };
 
+// function to find a user by its name.
+// returns null if no user is found
+async function getUser(name) {
+    try {
+        const user = await User.findOne({ username: name });
+        return user;
+    } catch (error) {
+        console.log(error);
+        return null;
+    }
+}
+
+// add a user to the users collection
 async function addUser(username, userPassword, userEmail) {
     let newUser = new User();
 
@@ -18,11 +32,4 @@ async function addUser(username, userPassword, userEmail) {
     return await newUser.save()
 }
 
-async function uploadJson(json, override = false) {
-    if (override === true) {
-        await User.collection.drop();
-    }
-    await User.insertMany(json);
-};
-
-module.exports = { addUser, uploadJson, deleteUsers };
+module.exports = { addUser, deleteUsers, getUser };
