@@ -523,6 +523,7 @@
         "name": "Hi Infidelity",
         "artist": "REO Speedwagon",
         "rank": "66",
+        "coverImage": "/img/cover.jpg",
         "releaseYear": "1980",
         "price": 70.97
     },
@@ -794,6 +795,7 @@
         "name": "The Dutchess",
         "artist": "Fergie",
         "rank": "100",
+        "coverImage": "/img/cover.jpg",
         "releaseYear": "2006",
         "price": 23.19
     },
@@ -817,6 +819,7 @@
         "name": "The Graduate",
         "artist": "Simon & Garfunkel",
         "rank": "103",
+        "coverImage": "/img/cover.jpg",
         "releaseYear": "1968",
         "price": 28.85
     },
@@ -904,6 +907,7 @@
         "name": "Abraxas",
         "artist": "Santana",
         "rank": "114",
+        "coverImage": "/img/cover.jpg",
         "releaseYear": "1970",
         "price": 98.83
     },
@@ -935,6 +939,7 @@
         "name": "Nevermind",
         "artist": "Nirvana",
         "rank": "118",
+        "coverImage": "/img/cover.jpg",
         "releaseYear": "1991",
         "price": 50.38
     },
@@ -1062,6 +1067,7 @@
         "name": "Monkey Business",
         "artist": "The Black Eyed Peas",
         "rank": "134",
+        "coverImage": "/img/cover.jpg",
         "releaseYear": "2005",
         "price": 35.79
     },
@@ -1469,6 +1475,7 @@
         "name": "Houses of the Holy",
         "artist": "Led Zeppelin",
         "rank": "185",
+        "coverImage": "/img/cover.jpg",
         "releaseYear": "1973",
         "price": 14.62
     },
