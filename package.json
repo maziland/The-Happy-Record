@@ -25,7 +25,8 @@
     "fs": "^0.0.1-security",
     "he": "^1.2.0",
     "jssoup": "^0.0.15",
-    "mongoose": "^7.2.2"
+    "mongoose": "^7.2.2",
+    "winston": "^3.9.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

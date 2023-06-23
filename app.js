@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 require("dotenv").config()
 const session = require('express-session');
-
+logger = require("./utils/logger");
 
 // Connect to DB and insert data
 if (process.env.INIT_DB == "true") {
@@ -32,4 +32,4 @@ app.use(require('./routes/middlewares/handle_404'));
 
 
 app.listen(process.env.LISTEN_PORT || 3000);
-console.log(`Running at Port ${process.env.LISTEN_PORT || 3000}`);
+logger.info(`Running at Port ${process.env.LISTEN_PORT || 3000}`);
