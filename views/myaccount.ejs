@@ -1,0 +1,37 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/myaccount.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<div class="container col-md-3">
+    <form id="login-form" action="/login" method="post">
+        <h1>My Account</h1>
+        <div class="input-field">
+            <label class="user-property" id="username">
+                <span style="text-align: center;">Username</span>
+                <input type="text" value="<%= account.username %>" />
+            </label>
+        </div>
+        <div class="input-field">
+            <label class="user-property" id="email">
+                <span>Email</span>
+                <input type="text" value="<%= account.email %>" />
+            </label>
+        </div>
+        <div hidden class="input-field">
+            <label class="user-property" id="password">
+                <span>Password</span>
+                <input type="text" />
+            </label>
+        </div>
+        <div hidden class="input-field">
+            <label class="user-property" id="confirm-password">
+                <span>Confirm Password</span>
+                <input type="text" />
+            </label>
+        </div>
+        <br>
+        <input type="submit" value="Update Account">
+    </form>
+</div>
+<script src="/js/myaccount.js"></script>
+<%- include('partials/footer') %>
