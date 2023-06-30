@@ -1,13 +1,33 @@
-const winston = require('winston');
+const { createLogger, format, transports, addColors } = require('winston');
 
+addColors({
+    error: 'red',
+    warn: 'yellow',
+    info: 'cyan',
+    debug: 'green'
+});
+
+const formatParams = (info) => {
+    const {
+        level, message, ...args
+    } = info;
+
+    return `${level}: ${message} ${Object.keys(args).length
+        ? JSON.stringify(args, '', '')
+        : ''}`;
+};
+const Format = format.combine(
+    format.colorize(),
+    format.align(),
+    format.printf(formatParams),
+
+);
 // Create a Winston logger instance
-const logger = winston.createLogger({
-    level: 'info', // Set the desired log level
-    format: winston.format.simple(), // Set the log format
+const logger = createLogger({
+    level: 'debug', // Set the desired log level
+    format: Format, // Set the log format
     transports: [
-        new winston.transports.Console() // Output logs to the console
-        // Add additional transports as needed, e.g., File, HTTP, etc.
-    ]
+        new transports.Console()]
 });
 
 module.exports = logger;
