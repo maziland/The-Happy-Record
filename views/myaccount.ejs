@@ -3,31 +3,30 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <div class="container col-md-3">
-    <form id="login-form" action="/login" method="post">
+    <form novalidate id="update-form" action="/myaccount/update" method="post">
         <h1>My Account</h1>
         <div class="input-field">
-            <label class="user-property" id="username">
-                <span style="text-align: center;">Username</span>
-                <input type="text" value="<%= account.username %>" />
-            </label>
+            <span>Username</span>
+            <input readonly name="username" id="username" type="text" value="<%= account.username %>" />
+            <div class="error-message"></div>
         </div>
         <div class="input-field">
-            <label class="user-property" id="email">
-                <span>Email</span>
-                <input type="text" value="<%= account.email %>" />
-            </label>
+            <span>Email</span>
+            <input id="email" name="email" type="email" value="<%= account.email %>" />
+            <div class="error-message"></div>
         </div>
-        <div hidden class="input-field">
-            <label class="user-property" id="password">
-                <span>Password</span>
-                <input type="text" />
-            </label>
+        <button id="changePassword" type="button" class="btn btn-outline-primary">Change My Password</button>
+        <div hidden class="input-field hidden-password">
+            <input type="password" name="password" placeholder="Enter Password" autocomplete="current-password"
+                required="" id="password">
+            <i class="far fa-eye" id="togglePassword"></i>
+            <div class="error-message"></div>
         </div>
-        <div hidden class="input-field">
-            <label class="user-property" id="confirm-password">
-                <span>Confirm Password</span>
-                <input type="text" />
-            </label>
+        <div hidden class="input-field hidden-password">
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" autocomplete="current-password"
+                required="" id="confirm-password">
+            <i class="far fa-eye" id="togglePasswordConfirmation"></i>
+            <div class="error-message"></div>
         </div>
         <br>
         <input type="submit" value="Update Account">

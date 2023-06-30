@@ -37,5 +37,16 @@ UserSchema.methods.validPassword = function (password) {
     return this.hashed_password === hash;
 };
 
+// Method to update the user's email 
+UserSchema.methods.updateEmail = function (email) {
+    this.email = email;
+    this.save();
+};
+
+// Method to update the user's password 
+UserSchema.methods.updatePassword = function (password) {
+    this.setPassword(password);
+    this.save();
+};
 const User = mongoose.model('User', UserSchema);
 module.exports = { User };

@@ -4,7 +4,7 @@ async function renderAccountPage(req, res) {
     try {
         if (req.session.username) {
             // User is authenticated, show user profile
-            account = await usersService.getUser(req.session.username);
+            account = await usersService.getUserByUsername(req.session.username);
             return res.render('myaccount.ejs', { account: { username: account.username, email: account.email } });
         } else {
             return res.redirect(`/login?message=${encodeURIComponent(`Please login first!`)}`);
@@ -19,26 +19,28 @@ async function renderAccountPage(req, res) {
 async function updateAccount(req, res) {
     try {
         if (req.get('Content-Type') === 'application/x-www-form-urlencoded') {
-            const { username, password } = req.body;
-            // Validate login
-            user = await usersService.getUser(username);
-            if (user) {
-                // User exists
-                if (user.validPassword(password)) {
-                    // Login is successful
-                    req.session.username = username;
-                    console.log(`${username} signed in!`);
-                    return res.redirect('/');
-                } else {
-                    // Wrong password
-                    return res.render("login.ejs", { errorMessage: "Wrong password!" });
-                }
-            } else {
-                // User doe's not exist
-                return res.render("login.ejs", { errorMessage: "User doe's not exist!" });
+            logger.info(`Got update request for user: ${req.session.username}`);
+            const { username, email, password, confirmPassword } = req.body;
+
+            // In case form username is different from session
+            if (req.session.username != username) {
+                logger.error("Got update request with different a username");
+                return res.status(400).send('Wrong username');
             }
 
-            return res.redirect('/');
+            // Update user 
+            user = await usersService.getUserByUsername(username);
+            // Update email if we got a new one
+            if (user.email != email) {
+                logger.info(`Updating email for user: ${username}`);
+                user.updateEmail(email);
+            }
+            // Update password
+            if ((password != '') && (confirmPassword === password)) {
+                logger.info(`Updating password for user: ${username}`);
+                user.updatePassword(password);
+            }
+            return res.redirect('/myaccount');
         }
         res.status(400).send('Wrong Content-Type');
     } catch (error) {

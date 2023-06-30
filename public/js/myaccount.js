@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    const email = $('#email').val().trim();
+
     // Synchronous XHR POST request
     function apiRequestSync(uri, json) {
         const xhr = new XMLHttpRequest();
@@ -21,7 +23,7 @@ $(document).ready(function () {
     function validateForm() {
         // Retrieve the input values
         const username = $('#username').val().trim();
-        const email = $('#email').val().trim();
+        const newEmail = $('#email').val().trim();
         const password = $('#password').val();
         const confirmPassword = $('#confirm-password').val();
 
@@ -31,27 +33,25 @@ $(document).ready(function () {
         // Perform input validation
         let isValid = true;
 
-        if (username === '') {
-            displayErrorMessage($('#username'), 'Username is required');
-            isValid = false;
-        } else if (apiRequestSync("/api/user/exists", { username: username })) {
-            // Check whether or not the user already exists
-            displayErrorMessage($('#username'), 'This username is already taken');
-            isValid = false;
-        }
-
-        if (email === '') {
+        if (email == newEmail) {
+            // Do nothing, email hasn't changed
+        } else if (newEmail === '') {
             displayErrorMessage($('#email'), 'Email is required');
             isValid = false;
-        } else if (!isValidEmail(email)) {
+        } else if (!isValidEmail(newEmail)) {
             displayErrorMessage($('#email'), 'Invalid email address');
             isValid = false;
+        } else {
+            // Email has changed and is correct
+            // Check it is not taken already
+            if (!apiRequestSync("/api/email/updatecheck", { email: newEmail })) {
+                displayErrorMessage($('#email'), 'This email belongs to another user');
+                isValid = false;
+            }
         }
 
-        if (password === '') {
-            displayErrorMessage($('#password'), 'Password is required');
-            isValid = false;
-        } else if (password !== confirmPassword) {
+        // Check passwords
+        if (password !== confirmPassword) {
             displayErrorMessage($('#confirm-password'), 'Passwords do not match');
             isValid = false;
         }
@@ -93,11 +93,21 @@ $(document).ready(function () {
     });
 
     // Event listener for form submission
-    $('#register-form').submit(function (event) {
+    $('#update-form').submit(function (event) {
         event.preventDefault(); // Prevent form submission
+
 
         if (validateForm()) {
             this.submit();
         }
+    });
+
+    $('#username').click(function () {
+        displayErrorMessage($(this), "Username can't be changed");
+    });
+
+    $('#changePassword').click(function () {
+        $(this).hide();
+        $(".hidden-password").attr("hidden", false);
     });
 });
