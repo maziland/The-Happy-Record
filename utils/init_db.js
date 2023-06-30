@@ -8,7 +8,7 @@ const userService = require("../services/user")
 async function initializeUsers() {
     await userService.deleteUsers({});
     await userService.addUser("admin", "password", "admin@admin.com");
-    await userService.addUser("admin2", "password", "admin@admin.com");
+    await userService.addUser("admin2", "password", "admin2@admin.com");
 }
 
 mongoose.connect(process.env.CONNECTION_STRING);
