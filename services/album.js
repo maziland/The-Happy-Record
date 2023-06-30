@@ -1,8 +1,9 @@
 const albumModel = require("../models/album").albumModel;
+const logger = require("../utils/logger");
 
 async function deleteAlbums() {
     await albumModel.deleteMany({});
-    console.log("Deleted albums collection");
+    logger.debug("Deleted albums collection");
 };
 
 async function addAlbum(id, name, date_created, price) {

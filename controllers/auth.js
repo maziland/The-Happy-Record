@@ -1,5 +1,5 @@
-const ejs = require('ejs');
 const usersService = require("../services/user")
+const logger = require("../utils/logger")
 
 async function renderLoginPage(req, res) {
     try {
@@ -21,13 +21,13 @@ async function login(req, res) {
         if (req.get('Content-Type') === 'application/x-www-form-urlencoded') {
             const { username, password } = req.body;
             // Validate login
-            user = await usersService.getUser(username);
+            user = await usersService.getUserByUsername(username);
             if (user) {
                 // User exists
                 if (user.validPassword(password)) {
                     // Login is successful
                     req.session.username = username;
-                    console.log(`${username} signed in!`);
+                    logger.info(`${username} signed in!`);
                     return res.redirect('/');
                 } else {
                     // Wrong password
@@ -56,7 +56,6 @@ async function register(req, res) {
 
             // Register the user
             await usersService.addUser(username, password, email);
-            // return res.render("login.ejs", { errorMessage: `Welcome ${username}!\nPlease login :)` });
             return res.redirect(`/login?message=${encodeURIComponent(`Welcome ${username}!\nPlease login :)`)}`);
 
         }
