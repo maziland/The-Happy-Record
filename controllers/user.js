@@ -2,13 +2,9 @@ const usersService = require("../services/user")
 
 async function renderAccountPage(req, res) {
     try {
-        if (req.session.username) {
-            // User is authenticated, show user profile
-            account = await usersService.getUserByUsername(req.session.username);
-            return res.render('myaccount.ejs', { account: { username: account.username, email: account.email } });
-        } else {
-            return res.redirect(`/login?message=${encodeURIComponent(`Please login first!`)}`);
-        }
+        // show user profile
+        account = await usersService.getUserByUsername(req.session.username);
+        return res.render('myaccount.ejs', { account: { username: account.username, email: account.email } });
     } catch (error) {
         // Handle error
         console.error(error);

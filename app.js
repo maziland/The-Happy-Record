@@ -19,7 +19,7 @@ app.use(session({
 }));
 
 // Adding pre routes middlewares
-app.use(require('./routes/middlewares/authenticated_check'));
+app.use(require('./routes/middlewares/client_side_auth'));
 
 // Extending the parsing abilities the server has
 app.use(express.json());
