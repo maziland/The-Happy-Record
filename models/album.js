@@ -1,7 +1,6 @@
 const mongoose = require('mongoose')
 
 const album = new mongoose.Schema({
-    _id: String,
     name: String,
     artist: String,
     rank: Number,
