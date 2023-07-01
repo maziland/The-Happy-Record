@@ -38,7 +38,7 @@ form input[type="submit"] {
     border: 1px solid red;
 }
 
-.btn {
+.my-btn {
     background-color: var(--ash);
     border-color: var(--dark-grey);
     color: var(--dark-grey);
