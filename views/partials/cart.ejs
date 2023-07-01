@@ -1,16 +1,77 @@
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<link rel="stylesheet" href="/css/cart.css">
+
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h3 class="modal-title" id="cartModalLabel">My Cart 🛒</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <section class="h-100 h-custom">
+                    <div class="container h-100 py-5">
+                        <div class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col">
+                                <!-- Cart items table -->
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="h5">Album</th>
+                                                <th scope="col">Artist</th>
+                                                <th scope="col">Quantity</th>
+                                                <th scope="col">Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <!-- Album Picture and name -->
+                                                <th scope="row">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="//e.snmc.io/i/150/s/735b0c9495dd05d33009fe5a06efbfff/6190855"
+                                                            class="img-fluid rounded-3" style="width: 120px;">
+                                                        <div class="flex-column ms-4">
+                                                            <p class="mb-2">bla</p>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <!-- Artist -->
+                                                <td class="align-middle">
+                                                    <p class="mb-0" style="font-weight: 500;">Digital</p>
+                                                </td>
+                                                <!-- Quantity -->
+                                                <td class="align-middle">
+                                                    <div class="d-flex flex-row">
+                                                        <button class="btn btn-link px-2"
+                                                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                                            <i class="fas fa-minus"></i>
+                                                        </button>
+
+                                                        <input id="form1" min="0" name="quantity" value="2"
+                                                            type="number" class="form-control form-control-sm"
+                                                            style="width: 50px;" />
+
+                                                        <button class="btn btn-link px-2"
+                                                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                            <i class="fas fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                                <td class="align-middle">
+                                                    <p class="mb-0" style="font-weight: 500;">$9.99</p>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

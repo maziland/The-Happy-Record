@@ -7,6 +7,7 @@ const albumsController = require("../controllers/albums");
 const authController = require("../controllers/auth")
 const userController = require("../controllers/user")
 const apiController = require("../controllers/api")
+const cartController = require("../controllers/cart")
 
 // Main route
 router.get("/", albumsController.homepage);
@@ -25,6 +26,10 @@ router.get("/search", Auth, albumsController.search);
 // User routes
 router.get("/myaccount", Auth, userController.renderAccountPage);
 router.post("/myaccount/update", Auth, userController.updateAccount);
+
+// Cart routes
+router.get("/cart", Auth, cartController.getCart);
+router.post("/cart", Auth, cartController.addToCart);
 
 // API routes
 router.post("/api/user/exists", apiController.userExists);

@@ -1,5 +1,6 @@
 const albumModel = require("../models/album").albumModel;
 const logger = require("../utils/logger");
+const mongoose = require('mongoose')
 
 async function deleteAlbums() {
     await albumModel.deleteMany({});
@@ -17,6 +18,15 @@ async function addAlbum(id, name, date_created, price) {
     return await album.save()
 };
 
+async function findById(id) {
+    try {
+        album = await albumModel.findById(id)
+        return album;
+    } catch (error) {
+        logger.error(`albumService findById failed with "${error}"`)
+    }
+};
+
 async function uploadJson(json, override = false) {
     if (override === true) {
         await albumModel.collection.drop();
@@ -24,4 +34,4 @@ async function uploadJson(json, override = false) {
     await albumModel.insertMany(json);
 };
 
-module.exports = { addAlbum, uploadJson, deleteAlbums };
+module.exports = { addAlbum, uploadJson, deleteAlbums, findById };

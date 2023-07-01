@@ -1,6 +1,9 @@
+const mongoose = require('mongoose')
+const ObjectID = mongoose.Schema.Types.ObjectId;
+
 const cartSchema = new mongoose.Schema({
     owner: {
-        type: ObjectID,
+        type: String,
         required: true,
         ref: 'User'
     },
@@ -11,6 +14,8 @@ const cartSchema = new mongoose.Schema({
             required: true
         },
         name: String,
+        artist: String,
+        coverImage: String,
         quantity: {
             type: Number,
             required: true,
