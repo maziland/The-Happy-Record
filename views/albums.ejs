@@ -17,7 +17,10 @@
                     <p class="card-text">
                         Rank: #<%= album.rank %>
                     </p>
-                    <a href="#" class="btn btn-outline-secondary">Add to Cart</a>
+                    <p hidden class="albumId">
+                        <%- album._id.toString() %>
+                    </p>
+                    <button href="#" class="btn btn-outline-secondary">Add to Cart</button>
                 </div>
             </div>
         </div>
