@@ -1,6 +1,6 @@
 // Middleware to prevent unauthorized access 
 module.exports = (req, res, next) => {
-    if (!req.session.user) {
+    if (!req.session.username) {
         return res.status(401).render("unauthorized.ejs");
     }
 
