@@ -4,7 +4,7 @@
   "description": "The best shop to buy your albums from!",
   "main": "app.js",
   "scripts": {
-    "devStart": "nodemon --inspect app.js"
+    "devStart": "nodemon --config nodemon.json --inspect app.js"
   },
   "repository": {
     "type": "git",
