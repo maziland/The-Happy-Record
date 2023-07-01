@@ -91,3 +91,8 @@ span.nav-link {
     transform: translateY(-50%);
     opacity: 0.6;
 }
+
+.shopping-cart {
+    border: none;
+    background-color: white;
+}
