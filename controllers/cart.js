@@ -13,7 +13,7 @@ async function getCart(req, res) {
             res.send(null);
         }
     } catch (error) {
-        logger.info(`getCart failed`)
+        logger.error(`getCart failed`)
         res.status(500).send('Internal Server Error');
     }
 };
@@ -36,7 +36,7 @@ async function addToCart(req, res) {
             //check if product exists or not
             if (itemIndex > -1) {
                 let product = cart.items[itemIndex];
-                product.quantity += quantity;
+                product.quantity += Number(quantity);
                 // Recalculate the cart's bill
                 cart.bill = cart.items.reduce((acc, curr) => {
                     return acc + curr.quantity * curr.price;
@@ -57,7 +57,7 @@ async function addToCart(req, res) {
             //no cart exists, create one
             const newCart = await Cart.create({
                 owner,
-                items: [{ itemId, name, quantity, price }],
+                items: [{ itemId, name, artist, coverImage, quantity, price }],
                 bill: quantity * price,
             });
             return res.status(201).send(newCart);
