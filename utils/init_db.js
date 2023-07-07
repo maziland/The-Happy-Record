@@ -3,6 +3,7 @@ const mongoose = require("mongoose")
 
 const albumService = require("../services/album")
 const userService = require("../services/user")
+const cartService = require("../services/cart")
 
 
 async function initializeUsers() {
@@ -11,8 +12,13 @@ async function initializeUsers() {
     await userService.addUser("admin2", "password", "admin2@admin.com");
 }
 
+async function initializeCarts() {
+    await cartService.deleteCarts({});
+}
+
 mongoose.connect(process.env.CONNECTION_STRING);
 initializeUsers();
+initializeCarts();
 
 
 
