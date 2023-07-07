@@ -42,3 +42,8 @@
     margin-bottom: 20px;
   }
 }
+
+.pagination {
+  justify-content: center;
+  padding-top: 1rem;
+}
