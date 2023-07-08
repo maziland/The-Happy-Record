@@ -47,3 +47,14 @@
   justify-content: center;
   padding-top: 1rem;
 }
+
+.price {
+  padding-right: 2rem;
+  color: orangered;
+  font-weight: bold;
+}
+
+.page-navbar {
+  border-top: var(--border);
+  margin-top: 15px;
+}

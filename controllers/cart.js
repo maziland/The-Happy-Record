@@ -37,6 +37,13 @@ async function addToCart(req, res) {
             if (itemIndex > -1) {
                 let product = cart.items[itemIndex];
                 product.quantity += Number(quantity);
+                if (product.quantity == 0) {
+                    // Remove item from array
+                    cart.items.splice(itemIndex, 1);
+                    await cart.save();
+                    res.status(200).send(cart);
+                    return;
+                }
                 // Recalculate the cart's bill
                 cart.bill = cart.items.reduce((acc, curr) => {
                     return acc + curr.quantity * curr.price;

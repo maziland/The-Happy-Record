@@ -24,7 +24,7 @@ initializeCarts();
 
 fs.readFile("./data/top_albums.json", 'utf8', function (err, data) {
     try {
-        albumService.uploadJson((JSON.parse(data)), override = true);
+        // albumService.uploadJson((JSON.parse(data)), override = true);
     }
     catch (err) {
         console.error("Problem reading albums json");
