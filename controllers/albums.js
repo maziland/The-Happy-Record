@@ -33,7 +33,7 @@ async function mainAlbums(req, res) {
     // Slice the albums array based on the calculated indices
     const displayedAlbums = sortedAlbums.slice(startIndex, endIndex);
 
-    logger.debug(`Rendering albums with sorting: ${sort}, albums per page: ${albumsPerPage}`);
+    logger.debug(`Rendering albums page ${page} with sorting: ${sort}`);
     res.render('albums.ejs', {
         albums: displayedAlbums,
         currentPage: page,
@@ -42,9 +42,7 @@ async function mainAlbums(req, res) {
     });
 };
 
-async function homepage(req, res) {
-    res.render("homepage.ejs");
-};
+
 
 
 // This function returns the albums.ejs only with albums
@@ -68,4 +66,4 @@ async function search(req, res) {
     });
 };
 
-module.exports = { mainAlbums, homepage, search };
+module.exports = { mainAlbums, search };

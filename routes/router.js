@@ -4,13 +4,14 @@ const router = express.Router();
 const Auth = require("./middlewares/server_side_auth");
 
 const albumsController = require("../controllers/albums");
+const homepageController = require("../controllers/homepage");
 const authController = require("../controllers/auth")
 const userController = require("../controllers/user")
 const apiController = require("../controllers/api")
 const cartController = require("../controllers/cart")
 
 // Main route
-router.get("/", albumsController.homepage);
+router.get("/", homepageController.homepage);
 
 // Albums route
 router.get("/albums", albumsController.mainAlbums);
