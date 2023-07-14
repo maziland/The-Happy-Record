@@ -6,4 +6,9 @@ async function deleteCarts() {
     logger.debug("Deleted carts collection");
 };
 
-module.exports = { deleteCarts };
+async function deleteCart(username) {
+    await cartModel.deleteOne({ owner: username });
+    logger.info(`Deleted cart for ${username}`);
+};
+
+module.exports = { deleteCarts, deleteCart };

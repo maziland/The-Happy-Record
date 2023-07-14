@@ -1,6 +1,7 @@
 const logger = require("../utils/logger");
 const Cart = require("../models/cart").cartModel;
 const creditsService = require("../services/credits");
+const ordersService = require("../services/orders");
 const albumService = require("../services/album");
 
 async function getCart(req, res) {
@@ -91,22 +92,25 @@ async function renderCheckoutPage(req, res) {
 
 async function checkout(req, res) {
     try {
+        logger.info(`${req.session.username} checked out and payed`)
         const { cardholder, cardnumber, expiration, cvv } = req.body;
         cardExists = await creditsService.getCreditCardByUsername(req.session.username);
         if (!cardExists) {
             // Save user's card on DB
             await creditsService.addCreditCardForUser(req.session.username, cardnumber, cardholder, expiration, cvv);
         };
+        // Add to orders
+        cart = await Cart.findOne({ owner: req.session.username });
+        await ordersService.addOrder(req.session.username, cart.items, cart.bill);
+
         // Delete the cart
         await Cart.deleteOne({ owner: req.session.username })
         logger.info(`Deleted cart for ${req.session.username}`);
 
-        // Add to orders
-
-        return res.send(555).send("Still not implemented");
+        res.render("homepage.ejs")
     } catch (error) {
         // Handle error
-        console.error(error);
+        logger.error(error);
         return res.status(500).send('Internal Server Error');
     }
 }
