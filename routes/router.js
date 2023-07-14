@@ -5,6 +5,7 @@ const Auth = require("./middlewares/server_side_auth");
 
 const albumsController = require("../controllers/albums");
 const homepageController = require("../controllers/homepage");
+const ordersController = require("../controllers/orders");
 const authController = require("../controllers/auth")
 const userController = require("../controllers/user")
 const apiController = require("../controllers/api")
@@ -33,6 +34,9 @@ router.get("/cart", Auth, cartController.getCart);
 router.post("/cart", Auth, cartController.addToCart);
 router.get("/checkout", Auth, cartController.renderCheckoutPage);
 router.post("/checkout", Auth, cartController.checkout);
+
+// Orders routes
+router.get("/orders", Auth, ordersController.renderOrdersPage);
 
 // API routes
 router.post("/api/user/exists", apiController.userExists);

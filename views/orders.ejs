@@ -1,0 +1,58 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/orders.css">
+
+<div class="container col-md-8">
+    <div class="container col-md-10">
+        <h1>My Orders</h1>
+        <hr>
+        <div class="row">
+            <% //console.log(orders) %>
+            <% orders.forEach(function(order) { %>
+            <div class="g-5">
+                <div class="card order-card">
+                    <div class="card-body">
+                        <p class="card-title"><i class="fa-solid fa-bag-shopping fa-lg" style="color: #061228;">
+                            </i>
+                            <%= order.createdAt.toLocaleDateString("en-GB") + " - " + order.createdAt.toTimeString().slice(0,8)
+                                %>
+                        </p>
+                        <hr>
+                        <div class="row gy-5">
+                            <% order.items.forEach(function(album) { %>
+                            <div class="col-md-3 card album-card">
+                                <img src=<%= album.coverImage %> class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <%= album.name %>
+                                    </h5>
+                                    <p class="card-text">
+                                        <%= album.artist %>
+                                    </p>
+                                    <small class="card-text">
+                                        <strong>Quantity: </strong><%= album.quantity %><br>
+                                    </small>
+
+                                    <small class="card-text">
+                                        <strong>Price: </strong><%= album.price %>
+                                    </small>
+                                    <hr>
+                                    <p class="card-text">
+                                        Subtotal: $<%= album.price * album.quantity %>
+                                    </p>
+
+                                </div>
+                            </div>
+                            <% }); %>
+                        </div>
+                        <hr>
+                        <p class="card-text">
+                            <strong>Total Price: </strong> $<%= order.bill %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+        <br>
+    </div>
+    <%- include('partials/footer') %>
