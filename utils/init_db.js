@@ -18,7 +18,7 @@ async function initializeCarts() {
 
 mongoose.connect(process.env.CONNECTION_STRING);
 initializeUsers();
-initializeCarts();
+// initializeCarts();
 
 
 
