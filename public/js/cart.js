@@ -71,7 +71,7 @@ $(document).ready(function () {
                 });
 
                 totalPrice = $('.total-price');
-                totalPrice.text(cartTotal.toFixed(2) + " $");
+                totalPrice.text("$" + cartTotal.toFixed(2));
             },
             error: function (error) {
                 // Handle error response

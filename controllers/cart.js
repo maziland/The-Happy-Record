@@ -75,4 +75,25 @@ async function addToCart(req, res) {
     }
 };
 
-module.exports = { addToCart, getCart };
+async function renderCheckoutPage(req, res) {
+    try {
+        // Show user's checkout page
+        return res.render('checkout.ejs');
+    } catch (error) {
+        // Handle error
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+}
+
+async function checkout(req, res) {
+    try {
+        res.status(555).send("Not implemented");
+    } catch (error) {
+        // Handle error
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+    }
+}
+
+module.exports = { addToCart, getCart, renderCheckoutPage, checkout };

@@ -31,6 +31,8 @@ router.post("/myaccount/update", Auth, userController.updateAccount);
 // Cart routes
 router.get("/cart", Auth, cartController.getCart);
 router.post("/cart", Auth, cartController.addToCart);
+router.get("/checkout", Auth, cartController.renderCheckoutPage);
+router.post("/checkout", Auth, cartController.checkout);
 
 // API routes
 router.post("/api/user/exists", apiController.userExists);
