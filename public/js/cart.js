@@ -5,24 +5,24 @@ $(document).ready(function () {
         if ($(this).hasClass("btn-minus")) {
             // Minus button
             var itemId = $(this).closest('tr').find('p[hidden]')[0].textContent;
-            addToCart(itemId, -1);
-            showFlashMessage();
+            var tableId = '#' + $(this).closest('tbody')[0].id
+            addToCart(itemId, -1, tableId = tableId);
         } else {
             // Plus button
             var itemId = $(this).closest('tr').find('p[hidden]')[0].textContent;
-            addToCart(itemId, 1);
-            showFlashMessage();
+            var tableId = '#' + $(this).closest('tbody')[0].id
+            addToCart(itemId, 1, tableId = tableId);
         }
     }
 
-    function updateCart() {
+    function updateCart(tableId) {
         $.ajax({
             url: '/cart',
             method: 'GET',
             success: function (cartItems) {
                 // Handle success response
                 // Perform UI updates on modal
-                const tableBody = $('#cart-table-body');
+                const tableBody = $(tableId);
                 var cartTotal = 0;
                 tableBody.empty();
 
@@ -67,16 +67,11 @@ $(document).ready(function () {
                         .appendTo($row);
 
                     // Append the row to the table body
-                    $('#cart-table-body').append($row);
+                    $(tableId).append($row);
                 });
 
                 totalPrice = $('.total-price');
-                totalPrice.empty();
-                $('<h3>').append(($('<strong>')).append("Total Price")).appendTo(totalPrice);
-                var $price = $('<h4 class="total-price">');
-                $price.append(cartTotal.toFixed(2) + " $");
-                $price.appendTo(totalPrice);
-
+                totalPrice.text(cartTotal.toFixed(2) + " $");
             },
             error: function (error) {
                 // Handle error response
@@ -89,7 +84,7 @@ $(document).ready(function () {
     $("#shopping-cart").click(() => {
         // On click, open the cart modal
         $('#cartModal').modal('show');
-        updateCart();
+        updateCart('#cart-table-body');
     });
 
     $("#close-cart-button").click(() => {
@@ -110,7 +105,7 @@ $(document).ready(function () {
         addToCart(itemId, quantity);
     });
 
-    function addToCart(itemId, quantity) {
+    function addToCart(itemId, quantity, tableId = "#cart-table-body") {
         // AJAX POST request
         $.ajax({
             url: '/cart',
@@ -119,13 +114,13 @@ $(document).ready(function () {
             success: function (cartItems) {
                 // Handle success response
                 console.log('Item added to cart:', cartItems);
+                updateCart(tableId);
                 const container = document.getElementById('cart-toast-container');
                 const targetElement = document.querySelector('[data-kt-docs-toast="stack"]');
                 const newToast = targetElement.cloneNode(true);
                 container.append(newToast);
                 const toast = bootstrap.Toast.getOrCreateInstance(newToast);
                 toast.show();
-                updateCart();
             },
             error: function (error) {
                 // Handle error response
@@ -133,5 +128,10 @@ $(document).ready(function () {
                 // Display error message or handle accordingly
             }
         });
+    }
+
+    if (window.location.pathname.includes("checkout")) {
+        // We are in checkout, update checkout's cart
+        updateCart("#checkout-cart-body");
     }
 });
