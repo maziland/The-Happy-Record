@@ -92,6 +92,16 @@ $(document).ready(function () {
         updateCart();
     });
 
+    $("#close-cart-button").click(() => {
+        // On click, close the cart modal
+        $('#cartModal').modal('hide');
+    });
+
+    $("#checkout-button").click(() => {
+        // go to checkout
+        window.location = "/checkout"
+    });
+
     $('.toast').toast({ delay: 1000 });
 
     $('button.add-to-cart').click(function () {
