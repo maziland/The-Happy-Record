@@ -16,6 +16,13 @@ jobs:
         name: id_rsa
         if_key_exists: fail
     - name: connect and pull
-      run: ssh root@${{ secrets.SSH_HOST }} "cd /root/The-Happy-Record && docker-compose down && git checkout main && git pull && docker-compose up -d && exit"
-    - name: cleanup
-      run: rm -rf ~/.ssh
+      run: ssh root@${{ secrets.SSH_HOST }} "cd /root/The-Happy-Record && docker-compose down && git checkout main && git pull && docker-compose build --no-cache && docker-compose up -d && exit"
+    - name: Check for successful start
+      run: |
+        if netstat -ant | grep -q "Running at Port 4000"; then
+          echo "Success"
+          exit 0
+        else
+          echo "Failed"
+          exit 1
+        fi
