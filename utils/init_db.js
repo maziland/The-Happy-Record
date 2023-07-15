@@ -1,6 +1,6 @@
 const fs = require("fs")
 const mongoose = require("mongoose")
-
+const logger = require("../utils/logger")
 const albumService = require("../services/album")
 const userService = require("../services/user")
 const cartService = require("../services/cart")
@@ -12,22 +12,17 @@ async function initializeUsers() {
     await userService.addUser("alon", "password", "alon@thr.com");
 }
 
-async function initializeCarts() {
-    await cartService.deleteCarts({});
-}
-
 mongoose.connect(process.env.CONNECTION_STRING);
-// initializeUsers();
-// initializeCarts();
+initializeUsers();
 
 
 
 fs.readFile("./data/top_albums.json", 'utf8', function (err, data) {
     try {
-        // albumService.uploadJson((JSON.parse(data)), override = true);
+        logger.info("Loaded albums from json");
+        albumService.uploadJson((JSON.parse(data)), override = true);
     }
     catch (err) {
-        console.error("Problem reading albums json");
+        logger.error("Problem reading albums json");
     }
 });
-
