@@ -16,7 +16,7 @@ jobs:
         name: id_rsa
         if_key_exists: fail
     - name: Connect to VPS and Deploy
-      run: ssh root@${{ secrets.SSH_HOST }} "cd /root/The-Happy-Record && docker-compose down && git checkout main && git pull && docker-compose build --no-cache && docker-compose up -d && netstat -ant && exit > deploy.log"
+      run: ssh root@${{ secrets.SSH_HOST }} "cd /root/The-Happy-Record && docker-compose down && git checkout main && git pull && docker-compose build --no-cache && docker-compose up -d && netstat -ant && exit" > deploy.log"
     - name: Check for successful start
       run: |
         if grep -q "4000" deploy.log; then
