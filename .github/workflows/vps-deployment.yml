@@ -1,0 +1,21 @@
+name: Deploy on VPS
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+      branches: [ "main" ]
+jobs:
+  deploy:      
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.VPS_PRIVATE_KEY }}
+        known_hosts: ${{ secrets.VPS_KNOWN_HOST }}
+        name: id_rsa
+        if_key_exists: fail
+    - name: connect and pull
+      run: ssh root@${{ secrets.SSH_HOST }} "cd /root/The-Happy-Record && docker-compose down && git checkout main && git pull && docker-compose up -d && exit"
+    - name: cleanup
+      run: rm -rf ~/.ssh

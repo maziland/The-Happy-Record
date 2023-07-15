@@ -8,8 +8,8 @@ const cartService = require("../services/cart")
 
 async function initializeUsers() {
     await userService.deleteUsers({});
-    await userService.addUser("admin", "password", "admin@admin.com");
-    await userService.addUser("alon", "password", "alon@thr.com");
+    await userService.addUser("admin", "jskdfna-asdbhb-932azx", "admin@admin.com");
+    await userService.addUser("alon", "jskdfna-asdbhb-932azx", "alon@thr.com");
 }
 
 mongoose.connect(process.env.CONNECTION_STRING);
