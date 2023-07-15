@@ -1,5 +1,5 @@
-const usersService = require("../services/user")
 const Orders = require("../models/orders").ordersModel;
+const Users = require("../models/user").User;
 
 const logger = require("../utils/logger");
 
@@ -53,8 +53,8 @@ async function addAlbum(req, res) {
 
 async function renderUsersPage(req, res) {
     try {
-        logger.debug(`Admin panel was opened!`);
-        return res.render('admin.ejs');
+        const users = await Users.find({});
+        return res.render('users.ejs', { users });
     } catch (error) {
         // Handle error
         logger.error(error);

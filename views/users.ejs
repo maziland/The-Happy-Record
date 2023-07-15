@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/orders.css">
+
+<div class="container col-md-8">
+    <div class="container text-center col-md-6">
+        <h1>Users</h1>
+        <hr>
+        <div class="row">
+            <% users.forEach(function(user) { %>
+            <div class="g-5">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= user.username %></h5>
+                        <hr>
+                        <div class="text-start">
+                            <p class="card-text"><strong>Username:</strong> <%= user.username %></p>
+                            <p class="card-text"><strong>Email:</strong> <%= user.email %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+        <br>
+    </div>
+    <%- include('partials/footer') %>

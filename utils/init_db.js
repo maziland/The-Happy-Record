@@ -9,7 +9,7 @@ const cartService = require("../services/cart")
 async function initializeUsers() {
     await userService.deleteUsers({});
     await userService.addUser("admin", "password", "admin@admin.com");
-    await userService.addUser("admin2", "password", "admin2@admin.com");
+    await userService.addUser("alon", "password", "alon@thr.com");
 }
 
 async function initializeCarts() {
@@ -17,7 +17,7 @@ async function initializeCarts() {
 }
 
 mongoose.connect(process.env.CONNECTION_STRING);
-initializeUsers();
+// initializeUsers();
 // initializeCarts();
 
 
