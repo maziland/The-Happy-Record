@@ -2,6 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const Auth = require("./middlewares/server_side_auth");
+const adminAuth = require("./middlewares/server_side_admin_auth");
 
 const albumsController = require("../controllers/albums");
 const homepageController = require("../controllers/homepage");
@@ -10,6 +11,7 @@ const authController = require("../controllers/auth")
 const userController = require("../controllers/user")
 const apiController = require("../controllers/api")
 const cartController = require("../controllers/cart")
+const adminController = require("../controllers/admin")
 
 // Main route
 router.get("/", homepageController.homepage);
@@ -37,6 +39,13 @@ router.post("/checkout", Auth, cartController.checkout);
 
 // Orders routes
 router.get("/orders", Auth, ordersController.renderOrdersPage);
+
+// Admin panel routes
+router.get("/admin", adminAuth, adminController.renderAdminPanel);
+router.get("/admin/add-album", adminAuth, adminController.renderAddAlbumPage);
+router.post("/admin/add-album", adminAuth, adminController.addAlbum);
+router.get("/admin/users", adminAuth, adminController.renderUsersPage);
+router.get("/admin/orders", adminAuth, adminController.renderOrdersPage);
 
 // API routes
 router.post("/api/user/exists", apiController.userExists);
