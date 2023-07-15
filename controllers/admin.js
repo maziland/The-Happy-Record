@@ -1,4 +1,5 @@
 const Orders = require("../models/orders").ordersModel;
+const Albums = require("../models/album").albumModel;
 const Users = require("../models/user").User;
 
 const logger = require("../utils/logger");
@@ -17,22 +18,9 @@ async function renderAdminPanel(req, res) {
     }
 }
 
-
 async function renderAddAlbumPage(req, res) {
     try {
-        logger.debug(`Admin panel was opened!`);
-        return res.render('admin.ejs');
-    } catch (error) {
-        // Handle error
-        logger.error(error);
-        res.status(500).send('Internal Server Error');
-    }
-}
-
-async function renderAddAlbumPage(req, res) {
-    try {
-        logger.debug(`Admin panel was opened!`);
-        return res.render('admin.ejs');
+        return res.render('add_album.ejs');
     } catch (error) {
         // Handle error
         logger.error(error);
@@ -42,11 +30,27 @@ async function renderAddAlbumPage(req, res) {
 
 async function addAlbum(req, res) {
     try {
-        logger.debug(`Admin panel was opened!`);
-        return res.render('admin.ejs');
+        if (req.get('Content-Type') === 'application/x-www-form-urlencoded') {
+            const { name, artist, rank, image, year, price } = req.body;
+
+            const album = new Albums({
+                name: name,
+                artist: artist,
+                rank: rank,
+                coverImage: image,
+                releaseYear: year,
+                price: price,
+            });
+            logger.info(`Adding the album: ${album}`);
+            await album.save();
+            return res.redirect("/albums");
+        } else {
+            res.status(400).send('Wrong Content-Type');
+        }
+
     } catch (error) {
         // Handle error
-        logger.error(error);
+        console.error(error);
         res.status(500).send('Internal Server Error');
     }
 }
