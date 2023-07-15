@@ -20,6 +20,7 @@ app.use(session({
 
 // Adding pre routes middlewares
 app.use(require('./routes/middlewares/client_side_auth'));
+app.use(require('./routes/middlewares/client_side_is_admin'));
 
 // Extending the parsing abilities the server has
 app.use(express.json());
