@@ -46,6 +46,7 @@ router.get("/admin/add-album", adminAuth, adminController.renderAddAlbumPage);
 router.post("/admin/add-album", adminAuth, adminController.addAlbum);
 router.get("/admin/users", adminAuth, adminController.renderUsersPage);
 router.get("/admin/orders", adminAuth, adminController.renderOrdersPage);
+router.get("/admin/stats", adminAuth, adminController.renderStatisticsPage);
 
 // API routes
 router.post("/api/user/exists", apiController.userExists);
