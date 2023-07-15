@@ -23,6 +23,10 @@
             <a href="/" class="navbar-brand">
                 <img src="img/shop_icon.png" alt="Shop Icon">
             </a>
+            <% if (isAdmin) { %>
+            <a href="/admin" class="nav-item nav-link"><strong>Admin Panel</strong></a>
+            </a>
+            <% } %>
             <a href="/albums" class="nav-item nav-link">Albums</a>
             </a>
             <form id="searchForm" class="search" role="search">
