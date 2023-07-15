@@ -64,8 +64,9 @@ async function renderUsersPage(req, res) {
 
 async function renderOrdersPage(req, res) {
     try {
-        logger.debug(`Admin panel was opened!`);
-        return res.render('admin.ejs');
+        var orders = await Orders.find({}).sort({ createdAt: -1 });
+        res.locals.showAll = true;
+        res.render("orders.ejs", { orders });
     } catch (error) {
         // Handle error
         logger.error(error);
