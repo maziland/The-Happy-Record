@@ -1,15 +1,25 @@
 const fs = require("fs")
 const mongoose = require("mongoose")
+require("dotenv").config()
 const logger = require("../utils/logger")
 const albumService = require("../services/album")
 const userService = require("../services/user")
-const cartService = require("../services/cart")
 
+function getPassword() {
+    if (process.env.IS_PROD) {
+        logger.info(`Password set to PROD environment`)
+        return "jskdfna-asdbhb-932azx";
+    } else {
+        logger.warning(`Notice: Password set to NON PROD environment`)
+        return "password";
+    }
+}
 
 async function initializeUsers() {
     await userService.deleteUsers({});
-    await userService.addUser("admin", "jskdfna-asdbhb-932azx", "admin@admin.com");
-    await userService.addUser("alon", "jskdfna-asdbhb-932azx", "alon@thr.com");
+    const password = getPassword();
+    await userService.addUser("admin", password, "admin@admin.com");
+    await userService.addUser("alon", password, "alon@thr.com");
 }
 
 mongoose.connect(process.env.CONNECTION_STRING);
